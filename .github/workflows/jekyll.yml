@@ -21,21 +21,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Install Ruby, make sure rubygems & bundler are good before we do anything else
-      - name: Setup Ruby (Ruby 3.2 + pinned Bundler)
+      - name: Setup Ruby (3.2)
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler-cache: false # we'll run bundle ourselves
 
       - name: Update RubyGems & install Bundler
         run: |
-          gem --version
           gem update --system --no-document
           gem install bundler -N -v "~> 2.5"
-          bundler -v
 
-      # If your lockfile was created on macOS, ensure Linux platforms exist
       - name: Ensure Linux platforms in lockfile (idempotent)
         run: |
           bundle lock --add-platform x86_64-linux || true
@@ -43,16 +38,26 @@ jobs:
         working-directory: website
 
       - name: Install gems
-        env:
-          BUNDLE_WITHOUT: "development:test"
         run: bundle install --jobs 4 --retry 3
         working-directory: website
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Build Jekyll
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --source website --destination _site
+        run: bundle exec jekyll build \
+          --source website \
+          --destination _site \
+          --baseurl "${{ steps.pages.outputs.base_path }}"
         working-directory: website
+
+      - name: Debug built files
+        run: |
+          echo "Contents of website/_site after build:"
+          ls -R website/_site | head -50
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
