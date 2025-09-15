@@ -21,37 +21,37 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+      # Install Ruby, make sure rubygems & bundler are good before we do anything else
+      - name: Setup Ruby (Ruby 3.2 + pinned Bundler)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1"
-          bundler-cache: false # don't auto-run bundle here
-          working-directory: website
+          ruby-version: "3.2"
+          bundler-cache: false # we'll run bundle ourselves
 
-      - name: Prepare bundler
+      - name: Update RubyGems & install Bundler
         run: |
-          gem install bundler -N -v "~>2.5"
-          bundle _2.5_ --version
-        working-directory: website
+          gem --version
+          gem update --system --no-document
+          gem install bundler -N -v "~> 2.5"
+          bundler -v
 
-      - name: Ensure Linux platforms in lockfile (safe if already present)
+      # If your lockfile was created on macOS, ensure Linux platforms exist
+      - name: Ensure Linux platforms in lockfile (idempotent)
         run: |
           bundle lock --add-platform x86_64-linux || true
           bundle lock --add-platform ruby || true
         working-directory: website
 
-      - name: Install gems (verbose for easier debugging)
+      - name: Install gems
         env:
           BUNDLE_WITHOUT: "development:test"
-        run: |
-          bundle install --jobs 4 --retry 3 --no-progress
+        run: bundle install --jobs 4 --retry 3 --no-progress
         working-directory: website
 
       - name: Build Jekyll
         env:
           JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --source website --destination _site
+        run: bundle exec jekyll build --source website --destination _site
         working-directory: website
 
       - name: Upload Pages artifact
@@ -60,11 +60,11 @@ jobs:
           path: website/_site
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
