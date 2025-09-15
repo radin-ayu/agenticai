@@ -45,7 +45,7 @@ jobs:
       - name: Install gems
         env:
           BUNDLE_WITHOUT: "development:test"
-        run: bundle install --jobs 4 --retry 3 --no-progress
+        run: bundle install --jobs 4 --retry 3
         working-directory: website
 
       - name: Build Jekyll
