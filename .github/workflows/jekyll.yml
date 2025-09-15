@@ -25,23 +25,39 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
-          bundler-cache: false
+          bundler-cache: false # don't auto-run bundle here
           working-directory: website
 
-      - name: Install dependencies
-        run: bundle install
+      - name: Prepare bundler
+        run: |
+          gem install bundler -N -v "~>2.5"
+          bundle _2.5_ --version
         working-directory: website
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --source website --destination _site
+      - name: Ensure Linux platforms in lockfile (safe if already present)
+        run: |
+          bundle lock --add-platform x86_64-linux || true
+          bundle lock --add-platform ruby || true
         working-directory: website
+
+      - name: Install gems (verbose for easier debugging)
+        env:
+          BUNDLE_WITHOUT: "development:test"
+        run: |
+          bundle install --jobs 4 --retry 3 --no-progress
+        working-directory: website
+
+      - name: Build Jekyll
         env:
           JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --source website --destination _site
+        working-directory: website
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./website/_site
+          path: website/_site
 
   deploy:
     environment:
