@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Finance Lab 1
-permalink: /lab1/
+# permalink: /lab1/
 nav_order: 2
 ---
 # 🏦 Finance Agent: Automate finance oriented tasks with Agentic AI. (Lab 1: Building a simple multi tool agent)
