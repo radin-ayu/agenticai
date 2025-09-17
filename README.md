@@ -1,6 +1,7 @@
 # agenticai.github.io
 Hands on Lab section of Agentic AI workshops
 
+# Getting Started? 
 # Student Prerequitsites
 These labs are for Power Users of Agentic AI. \n
 We also provide code based examples for Pro Code Developers. \n
@@ -25,7 +26,7 @@ We offer labs across 3 use cases:
 
 # Agenda 
 We take you through 
- - the core concepts of Agentic AI ,
- - latest techniques and methods,
- - hands on labs with low code agentic ai product - watsonx orchestrate
- - use case disucssion and QnA with SMEs 
+ - The core concepts of Agentic AI ,
+ - Latest techniques and methods,
+ - Hands on labs with low code agentic ai product - watsonx orchestrate
+ - Use case disucssion and QnA with SMEs 
