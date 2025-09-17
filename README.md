@@ -8,13 +8,13 @@ Ensure you have an IBM ID and access to a watsonx orchesetrate environment provi
 Follow Lab 0,1 and 2 in the respective use case folder. 
 
 # Instructor Prerequisites
-Set up the xero or service now account (refer to Instructor Instructions) \n
-Reserve and set up a watsonx Orchestrate Environment. \n
-Add participants to the watsonx Orcehstrate Environment. \n
-Follow Instructor instructions in the respective use case folder.
+1. Set up the xero or service now account (refer to Instructor Instructions)
+2. Reserve and set up a watsonx Orchestrate Environment.
+3. Add participants to the watsonx Orcehstrate Environment.
+4. Follow Instructor instructions in the respective use case folder.
 
 # Use Cases
-We offer labs across 3 use cases: \n
+We offer labs across 3 use cases: 
 
 ## Finance [link]
 [Image for Finance use case]
@@ -24,7 +24,7 @@ We offer labs across 3 use cases: \n
 [Image for IT use case]
 
 # Agenda 
-We take you through \n
+We take you through 
  - the core concepts of Agentic AI ,
  - latest techniques and methods,
  - hands on labs with low code agentic ai product - watsonx orchestrate
