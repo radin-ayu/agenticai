@@ -1,2 +1,31 @@
 # agenticai.github.io
-hands on lab section of agentic ai workshops
+Hands on Lab section of Agentic AI workshops
+
+# Student Prerequitsites
+These labs are for Power Users of Agentic AI. \n
+We also provide code based examples for Pro Code Developers. \n
+Ensure you have an IBM ID and access to a watsonx orchesetrate environment provide by the instrcutor. \n
+Follow Lab 0,1 and 2 in the respective use case folder. 
+
+# Instructor Prerequisites
+Set up the xero or service now account (refer to Instructor Instructions) \n
+Reserve and set up a watsonx Orchestrate Environment. \n
+Add participants to the watsonx Orcehstrate Environment. \n
+Follow Instructor instructions in the respective use case folder.
+
+# Use Cases
+We offer labs across 3 use cases: \n
+
+## Finance [link]
+[Image for Finance use case]
+## Sales [link]
+[Image for Sales use case]
+## IT [link]
+[Image for IT use case]
+
+# Agenda 
+We take you through \n
+ - the core concepts of Agentic AI ,
+ - latest techniques and methods,
+ - hands on labs with low code agentic ai product - watsonx orchestrate
+ - use case disucssion and QnA with SMEs 
