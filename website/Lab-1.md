@@ -31,9 +31,9 @@ This agent fetches procurement information for an organization. There are multip
 ![alt text](imgs/imgs_a/Finance_a_step_5.png)
 6. Click on the **Add from local instance**:
 ![alt text](imgs/imgs_a/Finance_a_step_6.png)
-7. Search for "xer-26aug:list-invoices" and select the tool by checking the box:
+7. Search for "list-invoices" and select the tool by checking the box:
 ![alt text](imgs/imgs_a/Finance_a_step_7.png)
-8. Search for "xer-26aug:list-contacts" and select the tool by checking the box. Then click on **Add to agent**:
+8. Search for "list-contacts" and select the tool by checking the box. Then click on **Add to agent**:
 ![alt text](imgs/imgs_a/Finance_a_step_8.png)
 9. Wait until the tools has been added successfully and double check that it is now shown in the **Toolset** section:
 ![alt text](imgs/imgs_a/Finance_a_step_9.png)

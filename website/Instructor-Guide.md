@@ -123,7 +123,7 @@ We are doing this so that participants can directly connect to MCP server and to
     - In the next screen, provide MCP server details. For the connection, choose the connection you created earlier.
     - Click connect, and then done.
     ![alt text](imgs/imgs_c/provide-mcp-server-connection-details.png)
-    - The next screen will load the list of tools available as part of this MCP server, toggle on the tools which are required for the later part of the labs.
+    - The next screen will load the list of tools available as part of this MCP server, toggle on the "list-invoices" and "list-contacts' tools which are required for the later part of the labs.
     ![alt text](imgs/imgs_c/once-conneceted-see-all-the-tools.png)
 
 
