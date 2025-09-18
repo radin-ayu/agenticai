@@ -12,7 +12,7 @@ This use case targets developing and deploying an Finance agent leveraging IBM w
 
 In lab 1, we will build a Finance agent in watsonx Orchestrate, provide it with tools to list invoices and contacts. 
 
-## Step by step instructions to build the Finance Agent:
+## Step by step instructions:
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
    ![alt text](imgs/imgs_a/Finance_a_step_1.png)
