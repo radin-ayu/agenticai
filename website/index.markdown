@@ -5,10 +5,10 @@ nav_order: 0
 ---
 
 # Welcome to IBM Agentic AI Experience Day!
-The IBM Agentic AI Experience Day is a hands-on, immersive event designed to empower you with the knowledge and tools to harness the power of Agentic AI. Through interactive sessions, expert-led discussions, and practical labs, participants will explore cutting-edge AI techniques and learn how to apply them effectively in their organizations. Whether you're looking to streamline operations, enhance decision-making, or drive innovation, this experience will provide actionable insights and strategies to bring Agentic AI powered systems into your organization.
+Join us for an immersive event to explore Agentic AI through interactive sessions, expert insights, and hands-on labs. Discover actionable strategies to drive innovation and streamline operations in your organization.
 
 # Agenda 
-We will take you through 
+Throughout the day, we will take you through 
  - The core concepts of Agentic AI 
  - Latest techniques and methods
  - Low-code Hands-on labs with IBM Watsonx Orchestrate
@@ -16,10 +16,9 @@ We will take you through
 ![alt text](imgs/imgs_intro/agenda.png)
 
 # Domains
-We offer the Experience Day curated across 3 domains: 
+We bring to you the Experience Day, curated across three transformative domains. Dive into each domain to discover tailored experiences and actionable insights!
 
 ## Finance
-Transform your Finance team today. Head to the labs to get started.
 ![alt text](imgs/imgs_intro/finance_domain.png)
 
 ## Sales
