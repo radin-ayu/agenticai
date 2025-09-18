@@ -12,7 +12,7 @@ We will take you through
  - Latest techniques and methods
  - Low-code Hands-on labs with IBM Watsonx Orchestrate
  - Use case disucssion in your own organization and QnA with SMEs to kick off Agentic AI adoption 
-<img width="253" height="198" alt="Screenshot 2025-09-18 at 12 13 30 PM" src="https://github.com/user-attachments/assets/0e62c087-8ce9-4030-a2f1-34113c576dd7" />
+![alt text](imgs/imgs_intro/agenda.png)
 
 
 # Getting Started? 
@@ -32,12 +32,13 @@ We will take you through
 We offer labs across 3 domains: 
 
 ## Finance [link]
-<img width="743" height="394" alt="Screenshot 2025-09-18 at 12 17 43 PM" src="https://github.com/user-attachments/assets/ea8d6634-9b73-4ee8-adce-76b2592e3286" />
+![alt text](imgs/imgs_intro/finance_domain.png)
 
 ## Sales [link]
-[Image for Sales use case]
+![alt text](imgs/imgs_intro/sales_domain.png)
+
 ## IT [link]
-[Image for IT use case]
+![alt text](imgs/imgs_intro/it_domain.png)
 
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
