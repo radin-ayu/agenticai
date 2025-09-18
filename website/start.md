@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Getting Started
+# permalink: /start/
 nav_order: 1
 ---
 
@@ -15,4 +16,4 @@ nav_order: 1
 1. Set up the xero or service now account (refer to Instructor Instructions)
 2. Reserve and set up a watsonx Orchestrate Environment.
 3. Add participants to the watsonx Orcehstrate Environment.
-4. Follow Instructor instructions for the respective domain.
+4. Follow Instructor guide for the respective domain.

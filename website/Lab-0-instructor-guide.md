@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Lab 0 - Instructor Guide
-# permalink: /lab0/
+title: Instructor Guide
+# permalink: /setupguide/
 nav_order: 2
 ---
-# 🏦 Xero Setup and Connection Guide (Lab 0: Instructor Setup Guide)
+# 🏦 Xero Setup and Connection Guide 
 
 ## Use Case Description
 
