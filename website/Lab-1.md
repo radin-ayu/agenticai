@@ -8,9 +8,9 @@ nav_order: 3
 
 ## Use Case Description
 
-This use case (in labs 1a, 1b) targets developing and deploying an Finance agent leveraging IBM watsonx Orchestrate. This agent will empower employees to interact with finance systems and access information efficiently through conversational AI.
+This use case targets developing and deploying an Finance agent leveraging IBM watsonx Orchestrate. This agent will empower employees to interact with finance systems and access information efficiently through conversational AI.
 
-In lab 1a, we will build a very simple Finance agent in watsonx Orchestrate, provide it with tools to list invoices and contacts.
+In lab 1, we will build a Finance agent in watsonx Orchestrate, provide it with tools to list invoices and contacts. 
 
 ## Step by step instructions to build the Finance Agent:
 
