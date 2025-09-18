@@ -9,7 +9,7 @@ nav_order: 1
 ## Student Prerequitsites
 1. These labs are for Power Users of Agentic AI.
 2. We also provide code based examples for Pro Code Developers.
-3. Ensure you have an IBM ID and access to a watsonx orchesetrate environment provide by the instrcutor.
+3. Ensure you have an IBM ID and access to a watsonx orchesetrate environment provided by the instrcutor.
 4. Follow Lab 0, 1 and 2 for the respective domain. 
 
 ## Instructor Prerequisites
