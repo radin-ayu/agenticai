@@ -31,13 +31,16 @@ We will take you through
 # Domains
 We offer labs across 3 domains: 
 
-## Finance [link]
+## Finance
+Transform your Finance team today. Head to the labs to get started.
 ![alt text](imgs/imgs_intro/finance_domain.png)
 
-## Sales [link]
+## Sales
+Releasing Soon..
 ![alt text](imgs/imgs_intro/sales_domain.png)
 
-## IT [link]
+## IT 
+Releasing Soon..
 ![alt text](imgs/imgs_intro/it_domain.png)
 
 
