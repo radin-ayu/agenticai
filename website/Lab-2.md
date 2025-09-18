@@ -2,7 +2,7 @@
 layout: page
 title: Finance Lab 2
 # permalink: /lab2/
-nav_order: 3
+nav_order: 4
 ---
 # 🏦 Finance Agent: Automate finance oriented tasks with Agentic AI. (Lab 2: Adding Knowledge Base)
 
