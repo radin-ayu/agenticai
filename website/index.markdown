@@ -4,75 +4,53 @@ title: About
 nav_order: 0
 ---
 
+# Welcome to IBM Agentic AI Experience Day!
 
-<div align="center">
-	<img src="imgs/imgs_intro/agenda.png" alt="Agenda" width="60%"/>
-</div>
+## Agenda
 
-# 🎉 Welcome to IBM Agentic AI Experience Day!
+We will guide you through:
 
-> **Empowering you to build, orchestrate, and innovate with Agentic AI.**
+- **Core Concepts of Agentic AI**  
+    Gain a deep understanding of the foundational principles driving Agentic AI.
 
----
+- **Latest Techniques and Methods**  
+    Explore cutting-edge advancements and methodologies in the field.
 
-## 🗓️ Agenda Highlights
+- **Low-Code Hands-On Labs with IBM Watsonx Orchestrate**  
+    Engage in practical, low-code exercises to enhance your skills.
 
-- **Core Concepts of Agentic AI**
-- **Latest Techniques & Methods**
-- **Low-code Hands-on Labs with IBM Watsonx Orchestrate**
-- **Use Case Discussion & Q&A with SMEs**
+- **Use Case Discussions and Q&A with SMEs**  
+    Collaborate on real-world applications within your organization and interact with subject matter experts to kickstart Agentic AI adoption.
 
----
+![Agenda Overview](imgs/imgs_intro/agenda.png)
 
-## 🌐 Domains
+# Domains
+We offer labs across 3 domains: 
 
-<div align="center">
-	<table>
-		<tr>
-			<td align="center">
-				<img src="imgs/imgs_intro/finance_domain.png" alt="Finance" width="120"/><br/>
-				<b>Finance</b><br/>
-				<span style="font-size:0.95em;">Transform your Finance team today.<br/>Head to the labs to get started.</span>
-			</td>
-			<td align="center">
-				<img src="imgs/imgs_intro/sales_domain.png" alt="Sales" width="120"/><br/>
-				<b>Sales</b><br/>
-				<span style="font-size:0.95em; color: #888;">Releasing Soon...</span>
-			</td>
-			<td align="center">
-				<img src="imgs/imgs_intro/it_domain.png" alt="IT" width="120"/><br/>
-				<b>IT</b><br/>
-				<span style="font-size:0.95em; color: #888;">Releasing Soon...</span>
-			</td>
-		</tr>
-	</table>
-</div>
+**Finance**
+Transform your Finance team today. Head to the labs to get started.
+![alt text](imgs/imgs_intro/finance_domain.png)
 
----
+**Sales**
+Releasing Soon..
+![alt text](imgs/imgs_intro/sales_domain.png)
 
-## 🚀 Getting Started
+**IT**
+Releasing Soon..
+![alt text](imgs/imgs_intro/it_domain.png)
 
-<details>
-<summary><strong>👩‍🎓 Student Prerequisites</strong></summary>
-
+# Getting Started? 
+## Student Prerequitsites
 1. These labs are for Power Users of Agentic AI.
-2. Code-based examples are available for Pro Code Developers.
-3. Ensure you have an IBM ID and access to a Watsonx Orchestrate environment provided by the instructor.
-4. Follow Lab 0, 1, and 2 in the respective use case folder.
+2. We also provide code based examples for Pro Code Developers.
+3. Ensure you have an IBM ID and access to a watsonx orchesetrate environment provide by the instrcutor.
+4. Follow Lab 0, 1 and 2 in the respective use case folder. 
 
-</details>
-
-<details>
-<summary><strong>👨‍🏫 Instructor Prerequisites</strong></summary>
-
-1. Set up the Xero or ServiceNow account (refer to Instructor Instructions).
-2. Reserve and set up a Watsonx Orchestrate Environment.
-3. Add participants to the Watsonx Orchestrate Environment.
+## Instructor Prerequisites
+1. Set up the xero or service now account (refer to Instructor Instructions)
+2. Reserve and set up a watsonx Orchestrate Environment.
+3. Add participants to the watsonx Orcehstrate Environment.
 4. Follow Instructor instructions in the respective use case folder.
-
-</details>
-
----
 
 
 
