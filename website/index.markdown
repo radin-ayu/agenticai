@@ -8,7 +8,7 @@ nav_order: 0
 
 ## Agenda
 
-We will guide you through:
+We will take you on the journey from understanding to implementation with real-world enterprise use cases:
 
 - **Core Concepts of Agentic AI**  
     Gain a deep understanding of the foundational principles driving Agentic AI.
