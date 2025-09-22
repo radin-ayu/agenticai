@@ -76,6 +76,7 @@ This lab provides step-by-step instructions for instructors to set up Xero conne
 
 7. **Retrieve Credentials**
    - Return to your app page in the Xero Developer Portal. You may have to refresh the Developer Portal page after allowing access.
+   - **Generate Secret** by clickin on the button.
    - Note down the following credentials (you'll need these for watsonx Orchestrate):
      - **Client ID**: Copy this value
      - **Client Secret**: Copy this value (click "Show" to reveal)
