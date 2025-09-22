@@ -83,7 +83,7 @@ This lab provides step-by-step instructions for instructors to set up Xero conne
      ![alt text](imgs/imgs_c/come-back-apps-secret.png)
 
 ### Part 3: Setting up Connection in watsonx Orchestrate
-We are doing this so that participants can directly connect to MCP server and tools, and they don't have to go through process of creating a MCP connection. For this we will first create connection details to Xero MCP server, and then connec to this server via a sample agent.
+We are doing this so that participants can directly connect to MCP server and tools, and they don't have to go through process of creating a MCP connection. For this we will first create connection details to Xero MCP server, and then connect to this server via a sample agent.
 
 8. **Access watsonx Orchestrate**
    - Log into your IBM watsonx Orchestrate instance
