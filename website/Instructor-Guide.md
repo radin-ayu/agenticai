@@ -91,7 +91,7 @@ We are doing this so that participants can directly connect to MCP server and to
    ![alt text](imgs/imgs_c/connections-tab.png)
 
 9. **Create Xero Connection in WxO**
-   - Click on **Create New Connection**
+   - Click on **Add new Connection**
    ![alt text](imgs/imgs_c/add-new-connection.png)
    - Provide the details for the connection - connection name and description, and click save and continue
    ![alt text](imgs/imgs_c/conection-details.png)
