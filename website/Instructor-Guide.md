@@ -92,29 +92,44 @@ We are doing this so that participants can directly connect to MCP server and to
 
 9. **Create Xero Connection in WxO**
    - Click on **Add new Connection**
+     
    ![alt text](imgs/imgs_c/add-new-connection.png)
-   - Provide the details for the connection - connection name and description, and click save and continue. For example: `xero-connection-mcp`
+
+   - Provide the details for the connection - Unique **Connection ID**, name and description, and click save and continue. For example, `xero-connection-mcp-[your initial]`
+     
    ![alt text](imgs/imgs_c/conection-details.png)
-   - Select authentication type as key value pair, and team credentials
+
+   - Select **Authentication type** as **Key Value Pair**, and **Credential type** as **Team credentials**.
+     
    ![alt text](imgs/imgs_c/draft-env-kv-pair-team.png)
-   - Provide the required values in the key-value as client id and client secret that you got earliers, click connect and then next
+
+   - Provide the required values in the key-value as `XERO-CLIENT-ID` and `XERO-CLIENT-SECRET` that you got earlier, click **Connect** and then **Next**
+     
    ![alt text](imgs/imgs_c/provide-values-click-connect.png)
-   - In the next screen, repeat the process for the live environment. The one you did earlier was for draft environment
+
+   - In the next screen, repeat the process for the **Live** environment. The one you did earlier was for **Draft** environment. Finally, click **Add connection**
+     
    ![alt text](imgs/imgs_c/repeat-for-live-env.png)
 
 
 ### Part 4: Creating Agent with Xero MCP Server
 
 10. **Create New Agent**
+    
     - Navigate to **Agent Builder** in watsonx Orchestrate
      ![alt text](imgs/imgs_c/agent-builder-tab.png)
+
     - Click on **Create agent**
      ![alt text](imgs/imgs_c/create-agent.png)
-    - Select "Create from scratch", and add agent details - Give your agent a unique name (e.g., "[Your Initial]_Xero_Finance_Agent") and Add description: "This agent provides comprehensive finance management capabilities through Xero integration, including invoice management, contact management, and financial reporting."
-    ![alt text](imgs/imgs_c/provide-agent-details-create.png)
-    - Click on Create
 
-11. **Add Xero MCP Server**
+    - Select **'Create from scratch'**, and add agent details
+    - Give your agent a unique name (e.g., "[Your Initial]_Xero_Finance_Agent")
+    - Add description: "This agent provides comprehensive finance management capabilities through Xero integration, including invoice management, contact management, and financial reporting."
+    ![alt text](imgs/imgs_c/provide-agent-details-create.png)
+
+    - Click on **Create**
+
+12. **Add Xero MCP Server**
     - After the agent craetion, scroll to the **Toolset** section, click on **Add tool**
     ![alt text](imgs/imgs_c/agent-launcher-click-tools.png)
     - Select **Add from File or MCP Server**
