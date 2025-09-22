@@ -10,7 +10,7 @@ nav_order: 4
 
 In lab 2, we will add knowledge to our Finance agent in watsonx Orchestrate, and enable it to answer questions based on a knowledge base.
 
-1. Scroll down the screen to the **Knowledge** section:
+1. Scroll down the screen to the **Knowledge** section and **Choose Knowledge**:
    ![alt text](imgs/imgs_b/Finance_b_step_1.png)
 
 2. Click on **Upload files**. Then click on **Next**:
