@@ -28,7 +28,7 @@ In lab 1, we will build a Finance agent in watsonx Orchestrate, provide it with 
 ![alt text](imgs/imgs_a/Finance_a_step_4.png)
 
 5. Select Agent Style as **ReAct**
-![alt text](imgs/imgs_a/Finance_a_step_4b.png)
+![alt text](imgs/imgs_a/Finance_a_step_4a.png)
 
 
 6. Scroll to the **Toolset** section. Click on **Add tool**:
