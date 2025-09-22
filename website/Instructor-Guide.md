@@ -48,7 +48,7 @@ This lab provides step-by-step instructions for instructors to set up Xero conne
    ![alt text](imgs/imgs_c/click-new-app.png)
    - Fill in the app details:
      - **App name**: Enter a descriptive name (e.g., "Finance Agent Integration")
-     - **Company or App URL**: Add the link to your Xero dashboard screen. 
+     - **Company or App URL**: Add the link to your Xero dashboard screen. An example is shown below
      - Choose **Custom conection**
        
      ![alt text](imgs/imgs_c/fill-app-details.png)
