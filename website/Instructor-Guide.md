@@ -93,7 +93,7 @@ We are doing this so that participants can directly connect to MCP server and to
 9. **Create Xero Connection in WxO**
    - Click on **Add new Connection**
    ![alt text](imgs/imgs_c/add-new-connection.png)
-   - Provide the details for the connection - connection name and description, and click save and continue
+   - Provide the details for the connection - connection name and description, and click save and continue. For example: `xero-connection-mcp`
    ![alt text](imgs/imgs_c/conection-details.png)
    - Select authentication type as key value pair, and team credentials
    ![alt text](imgs/imgs_c/draft-env-kv-pair-team.png)
