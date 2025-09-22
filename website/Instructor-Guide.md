@@ -103,7 +103,7 @@ We are doing this so that participants can directly connect to MCP server and to
      
    ![alt text](imgs/imgs_c/draft-env-kv-pair-team.png)
 
-   - Provide the required values in the key-value as `XERO-CLIENT-ID` and `XERO-CLIENT-SECRET` that you got earlier, click **Connect** and then **Next**
+   - Provide the required values in the key-value as `XERO_CLIENT_ID` and `XERO_CLIENT_SECRET` that you got earlier, click **Connect** and then **Next**
      
    ![alt text](imgs/imgs_c/provide-values-click-connect.png)
 
@@ -117,30 +117,43 @@ We are doing this so that participants can directly connect to MCP server and to
 10. **Create New Agent**
     
     - Navigate to **Agent Builder** in watsonx Orchestrate
+      
      ![alt text](imgs/imgs_c/agent-builder-tab.png)
 
     - Click on **Create agent**
+      
      ![alt text](imgs/imgs_c/create-agent.png)
 
     - Select **'Create from scratch'**, and add agent details
     - Give your agent a unique name (e.g., "[Your Initial]_Xero_Finance_Agent")
     - Add description: "This agent provides comprehensive finance management capabilities through Xero integration, including invoice management, contact management, and financial reporting."
+    
     ![alt text](imgs/imgs_c/provide-agent-details-create.png)
 
     - Click on **Create**
 
 12. **Add Xero MCP Server**
-    - After the agent craetion, scroll to the **Toolset** section, click on **Add tool**
+    - After the agent creation, scroll to the **Toolset** section, click on **Add tool**
     ![alt text](imgs/imgs_c/agent-launcher-click-tools.png)
+
     - Select **Add from File or MCP Server**
     ![alt text](imgs/imgs_c/add-file-mcp-server.png)
+
     - Click on **Import from MCP Server**
     ![alt text](imgs/imgs_c/import-from-mcp-server.png)
+
     - Click on **add MCP server**
     ![alt text](imgs/imgs_c/add-mcp-server.png)
-    - In the next screen, provide MCP server details. For the connection, choose the connection you created earlier.
-    - Click connect, and then done.
+
+    - In the next screen, provide MCP server details: unique **Server name**. For example: `xero-mcp-server-workshop-[your initial]` and description.
+    - From **Select Connection** dropdown, choose the connection you created earlier.
+    - Enter the following **Install command**
+      ```bash
+      npx -y @xeroapi/xero-mcp-server@latest
+      ```
+    - Click **Connect**, and then done.
     ![alt text](imgs/imgs_c/provide-mcp-server-connection-details.png)
+
     - The next screen will load the list of tools available as part of this MCP server, toggle on the "list-invoices" and "list-contacts' tools which are required for the later part of the labs.
     ![alt text](imgs/imgs_c/once-conneceted-see-all-the-tools.png)
 
