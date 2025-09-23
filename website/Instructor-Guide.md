@@ -160,3 +160,8 @@ We are doing this so that participants can directly connect to MCP server and to
 
 ## Next Steps
 In this guide, we have configured the xero connections in our wxo environment, and users in the following labs can directly search for tools from the MCP server for their use.
+
+## Note
+The demo company expires every 30 days. To recreate, login to Xero and create the company again.
+Then go to the app connection in Xero developer. You will see the app is disconnected, connect it again.
+
