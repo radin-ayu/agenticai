@@ -48,16 +48,16 @@ In lab 1, we will build a Finance agent in watsonx Orchestrate, provide it with 
 
 11. Scroll down to the **Behavior** section. Insert the instructions below into the **Instructions** field:
 
-```
-when user asks invoices for a specific contact, get the contact id from list contacts before running list invoices tool one by one for each page.
-When the user asks for invoices for a contact, first get the contact_id from List Contacts. Then call List Invoices with that contact_id and iterate through all pages until no more invoices are returned (using next_page_token, has_more, total_pages, or page size logic). Collect all invoices.
+   ```
+   When the user asks for invoices for a contact, first get the contact_id from List Contacts. Then call List Invoices with that contact_id and iterate through all pages until no more invoices are returned (using next_page_token, has_more, total_pages, or page size logic). Collect all invoices.
 
-When the user asks for pending invoices, retrieve all invoices across all pages (with or without contact filter) and return only those with Type = ACCREC and Status = AUTHORIZED.
+   When the user asks for pending invoices, retrieve all invoices across all pages (with or without contact filter) and return only those with Type = ACCREC and Status = AUTHORIZED.
 
-Do not ask the user for input. Always include contact name, invoice type, amount paid, amount due, due date, and status. Format the results in a clear table or list.
+   Do not ask the user for input. Always include contact name, invoice type, amount paid, amount due, due date, and status. Format the results in a clear table or list.
 
-Pending account receivables = Type ACCREC and Status AUTHORIZED.
-```
+   Pending account receivables = Type ACCREC and Status AUTHORIZED.
+
+   ```
 
 ![alt text](imgs/imgs_a/Finance_a_step_10.png)
 11. Test your agent in the preview chat on the right side by asking the following questions and validating the responses. They should look similar to what is shown in the screenshot(s) below:
