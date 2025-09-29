@@ -1,75 +1,92 @@
 ---
 layout: page
-title: Finance Lab 1
+title: Lab 1
 # permalink: /lab1/
 nav_order: 3
 ---
-# 🏦 Finance Agent: Automate finance oriented tasks with Agentic AI. 
-# (Lab 1: Building a simple multi tool agent)
+# 🧑‍💼 AskHR Lab 2: Building a RAG agent
+    
+In this lab, we will enable our HR agent in watsonx Orchestrate to answer questions based on a knowledge base. This agent retrieves relevant information from documents to answer user queries.
 
-## Use Case Description
+We will make this agent more powerful with more tools and access to APIs, and enable it to collaborate with other agents in lab3.
 
-This use case targets developing and deploying an Finance agent leveraging IBM watsonx Orchestrate. This agent will empower employees to interact with finance systems and access information efficiently through conversational AI.
 
-In lab 1, we will build a Finance agent in watsonx Orchestrate, provide it with tools to list invoices and contacts. 
-
-## Step by step instructions:
+## Step by step instructions to build the HR Agent:
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
-   ![alt text](imgs/imgs_a/Finance_a_step_1.png)
-2. Click on the down arrow next to **Build**. Then click on **Agent Builder**:
-   ![alt text](imgs/imgs_a/Finance_a_step_2.png)
-3. Click on **Create agent**:
-   ![alt text](imgs/imgs_a/Finance_a_step_3.png)
-4. Select "Create from scratch", give your agent a unique name (make sure to identify yourself by your initials or name, since this is a shared instance), e.g. "[Your Initial]\_Finance_Agent", and fill in the description as shown below:
-   ```
-   This agent fetches procurement information for an organization. There are multiple tools for procurement information, such as account info, invoice info. There is also a knowledge resource on late payment policy.
-   ```
-![alt text](imgs/imgs_a/Finance_a_step_4.png)
 
-5. Select Agent Style as **ReAct**
-![alt text](imgs/imgs_a/Finance_a_step_4a.png)
+    ![image](./imgs/lab-3a/step1.png)
+
+1. Click on the down arrow next to **Build**.  Then click on **Agent Builder**:
+
+    ![image](./imgs/lab-3a/step2.png)
+
+1. Click on **Create agent +**:
+
+    ![image](./imgs/lab-3a/step3.png)
+
+1. Select "Create from scratch", give your agent a unique name (make sure to identify yourself by your initials or name, since this is a shared instance), e.g. "[Your Initial]_HR Agent", and fill in the description as shown below: 
+
+    ```
+    You are an agent who handles employee HR queries.  You provide short and crisp responses, keeping the output to 200 words or less. You can answer general questions about company benefits.
+    ```  
+
+    Click on **Create**:
+
+    ![image](./imgs/lab-3a/hr_step4.png)
+
+1. We are going to build a knowledge base for the agent. Scroll down the screen to the **Knowledge** section and click on "Choose knowledge".
+
+    ![image](./imgs/lab-3a/hr_step_knowledge.png)
+
+1. Choose "Upload files" and click "Next".
+
+    ![image](./imgs/lab-3a/hr_step_uploadfile.png)
+
+1. Drag and drop the [Employee Benefits.pdf](./pdfs/Employee-Benefits.pdf) and click on **Next**:
+
+    ![image](./imgs/lab-3a/hr_step6.png)
+
+1. Copy the following description into the **Description** section and click **Save**:
+
+    ```
+    This knowledge base addresses the company's employee benefits, including parental leaves, pet policy, flexible work arrangements, and student loan repayment.
+    ```
+
+    ![image](./imgs/lab-3a/hr_step_desc.png)
+
+    The knowledge base will take some time to create. After the knowledge base is done, you will be brought back to the Agent Builder UI.
+
+    ![image](./imgs/lab-3a/hr_step_kbase.png)
 
 
-6. Scroll to the **Toolset** section. Click on **Add tool**:
-![alt text](imgs/imgs_a/Finance_a_step_5.png)
+1. Scroll down to the **Behavior** section. Insert the instructions below into the **Instructions** field:
 
-7. Click on the **Add from local instance**:
-![alt text](imgs/imgs_a/Finance_a_step_6.png)
+    ```
+    Use your knowledge base to answer general questions about employee benefits. 
+    ```
 
-8. Search for "list-invoices" and select the tool by checking the box:
-![alt text](imgs/imgs_a/Finance_a_step_7.png)
+    ![image](./imgs/lab-3a/hr_step12.png)
 
-9. Search for "list-contacts" and select the tool by checking the box. Then click on **Add to agent**:
-![alt text](imgs/imgs_a/Finance_a_step_8.png)
+1. Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshot(s) below:
 
-10. Wait until the tools has been added successfully and double check that it is now shown in the **Toolset** section:
-![alt text](imgs/imgs_a/Finance_a_step_9.png)
+    ```
+    What is the pet policy? 
+    ```
 
-11. Scroll down to the **Behavior** section. Insert the instructions below into the **Instructions** field:
+    ![image](./imgs/lab-3a/hr_step13.png)
 
-   ```
-   When the user asks for invoices for a contact, first get the contact_id from List Contacts. Then call List Invoices with that contact_id and iterate through all pages until no more invoices are returned (using next_page_token, has_more, total_pages, or page size logic). Collect all invoices.
+1. You can try the following sample questions as well:
 
-   When the user asks for pending invoices, retrieve all invoices across all pages (with or without contact filter) and return only those with Type = ACCREC and Status = AUTHORIZED.
+    ```
+    how many days of leave am i entitled to?
+    ```
+    ```
+    can i work from home 3 times a week?
+    ```
+    ```
+    does the company provide any assistance on loan repayments?
+    ```
+    Notice that you get a generic answers based on policy for all employees. You will see in the next lab how you can connect it to Employee Address Agent and Leave Management Agent from Lab 1 to do tasks for you.
 
-   Do not ask the user for input. Always include contact name, invoice type, amount paid, amount due, due date, and status. Format the results in a clear table or list.
-
-   Pending account receivables = Type ACCREC and Status AUTHORIZED.
-
-   ```
-
-![alt text](imgs/imgs_a/Finance_a_step_10.png)
-11. Test your agent in the preview chat on the right side by asking the following questions and validating the responses. They should look similar to what is shown in the screenshot(s) below:
-
-```
-List 5 invoices.
-```
-
-![alt text](imgs/imgs_a/Finance_a_test_1.png)
-
-```
-which invoices are pending for Boom FM?
-```
-
-![alt text](imgs/imgs_a/Finance_a_test_2.png)
+**Congratulations! You've built your RAG Agent.**
