@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Finance Lab 2
+title: Lab 2b
 # permalink: /lab2/
 nav_order: 4
 ---
