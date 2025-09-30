@@ -2,7 +2,7 @@
 layout: page
 title: Lab 1
 # permalink: /lab1/
-nav_order: 2
+nav_order: 3
 ---
 # 🧑‍💼 Supplier Research Lab 1: Building a RAG agent
     
@@ -16,15 +16,15 @@ Files used in lab can be downloaded from the following links:
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
 
-    ![image](./imgs/imgs_a/step_1.png)
+    ![image](./imgs/imgs_2a/step_1.png)
 
 1. Click on the down arrow next to **Build**.  Then click on **Agent Builder**:
 
-    ![image](./imgs/imgs_a/step_2.png)
+    ![image](./imgs/imgs_2a/step_2.png)
 
 1. Click on **Create agent +**:
 
-    ![image](./imgs/imgs_a/step_3.png)
+    ![image](./imgs/imgs_2a/step_3.png)
 
 1. Select "Create from scratch", give your agent a unique name (make sure to identify yourself by your initials or name, since this is a shared instance), e.g. "[Your Initial]_Supplier_Researcher Agent", and fill in the description as shown below: 
 
@@ -34,11 +34,11 @@ Files used in lab can be downloaded from the following links:
 
     Click on **Create**:
 
-    ![image](./imgs/imgs_a/step_4.png)
+    ![image](./imgs/imgs_2a/step_4.png)
 
 1. We are going to build a knowledge base for the agent. Scroll down the screen to the **Knowledge** section and click on "Choose knowledge".
 
-    ![image](./imgs/imgs_a/step_5.png)
+    ![image](./imgs/imgs_2a/step_5.png)
 
 1. Choose "Upload files" and click "Next".
 
@@ -46,7 +46,7 @@ Files used in lab can be downloaded from the following links:
 
 1. Drag and drop the [Procurement Requisition Rules.docx](./pdfs/Procurement%20Requisition%20Rules.docx) and [Supplier Sales Report for Procurement.docx](./pdfs/Supplier%20Sales%20Report%20for%20Procurement.docx) and click on **Next**:
 
-    ![image](./imgs/imgs_a/step_6.png)
+    ![image](./imgs/imgs_2a/step_6.png)
 
 1. Copy the following description into the **Description** section and click **Save**:
 
@@ -80,19 +80,5 @@ Files used in lab can be downloaded from the following links:
 
     ![image](./imgs/lab-3a/hr_step13.png)
 
-
-
-1. You can try the following sample questions as well:
-
-    ```
-    how many days of leave am i entitled to?
-    ```
-    ```
-    can i work from home 3 times a week?
-    ```
-    ```
-    does the company provide any assistance on loan repayments?
-    ```
-    Notice that you get a generic answers based on policy for all employees. You will see in the next lab how you can connect it to Employee Address Agent and Leave Management Agent from Lab 1 to do tasks for you.
 
 **Congratulations! You've built your RAG Agent.**

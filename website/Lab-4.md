@@ -2,7 +2,7 @@
 layout: page
 title: Lab 3
 # permalink: /lab3/
-nav_order: 5
+nav_order: 6
 ---
 🧑‍💼 AskHR Lab 3: Multi-Agent Collaboration
 =================================================================================
