@@ -4,7 +4,7 @@ title: Lab 2a
 # permalink: /lab1/
 nav_order: 3
 ---
-# 🧑‍💼 Supplier Research Lab 1: Building a RAG agent
+# 🏦 AskProcurement Lab 1: Building a Supplier Research RAG Agent
     
 In this lab, you will build a Supplier Researcher Agent using Watsonx.ai Agent Lab. This agent will allow you to research the suppliers for procuring Xtralife based on past supplier performance, procurement rules and customer reviews.
 
