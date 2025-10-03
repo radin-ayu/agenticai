@@ -264,3 +264,66 @@ Step-by-step instructions
 
 1. Now that our flow is done, we can click on **Done** on the top right corner.
 
+1. Let's try a question to test our flow.
+
+    ```
+    Check my order for 2000 units of Xtralife with $16 per unit. 
+    ```
+    <img src="./imgs/imgs_3/lab3_test.png" alt="image" width="500" />  
+
+    Since 2000 x $16 is less than $150000, the output should show us that the order is approved and we can proceed to place order. 
+
+    <img src="./imgs/imgs_3/lab3_test1.png" alt="image" width="500" />  
+
+## Adding Salesforce-related Tools
+
+1. Let's make our system more intelligent by adding in a tool that can go into Salesforce to get unit price of suppliers.
+    Click on **Add tool** and **Add from local instance**
+
+    <img src="./imgs/imgs_3/lab3_add.png" alt="image" width="500" />  
+
+    <img src="./imgs/imgs_3/lab3_add1.png" alt="image" width="500" /> 
+
+1. Search for **pricebook** and select the tool. Click on **Add to agent**
+
+    <img src="./imgs/imgs_3/lab3_add3.png" alt="image" width="700" />      
+
+1. Let us also import some tools that can help us to create orders in Salesforce if our order is approved. 
+
+1. Click on **Add tool** and **Add from local instance**. Search for **create_order**.
+    Select the resulting 2 tools and click add to agent.
+
+    <img src="./imgs/imgs_3/lab3_add4.png" alt="image" width="700" /> 
+
+1. Scroll down to the **Behaviour** section and add the following into the empty space.
+
+    ```
+    You must use fetch_price_books tool to get the unit price for different suppliers for Xtralife. If you do not know which supplier to choose, you must clarify with the user. 
+
+    Thereafter, trigger the Check flow tool to check the reorder quantity.
+
+    If the flow returns a message with order approved, proceed to create an order in Salesforce first using the create_order tool followed by create_product_in_order tool without any confirmation.
+    ```
+
+1. Now we can do some testing. Start with 
+
+    ```
+    I want to reorder 2000 units of Xtralife.
+    ```
+
+    If the system asks which supplier, you can get it to tell you.
+
+    <img src="./imgs/imgs_3/lab3_test2.png" alt="image" width="700" /> 
+
+    Once you get the approval, you can asks the system to proceed.
+
+    <img src="./imgs/imgs_3/lab3_test3.png" alt="image" width="700" /> 
+
+1. Feel free to try out other reorder amount.
+
+1. From this testing, the agent still do not have all the information (supplier names, how much reorder quantity...). We had already built the previous agents for these features. Next lab, we will see how all agents can come together to form a multi-agent system
+
+
+
+
+
