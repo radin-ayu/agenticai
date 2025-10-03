@@ -4,9 +4,9 @@ title: Lab 2b
 # permalink: /lab2/
 nav_order: 4
 ---
-# 🏦 Calculate Reorder Agent Lab 2b: Integrating External Tools
+# 🧑‍💼 Calculate Reorder Agent Lab 2b: Integrating External Tools
 
-In this lab, you will build a Calculate Reorder Agent using Watsonx Orchestrate. This agent will allow you to integrate external tools, autoai (for time series forecasting) and txt2sql (to query stock data), to calculate an optimal reorder quantity.
+In this lab, you will build a Calculate Reorder Agent using Watsonx Orchestrate. This agent will allow you to integrate external tools: txt2sql (for querying stock data) and autoai (for time series forecasting), to calculate an optimal reorder quantity.
 
 Files used in lab can be downloaded from the following links:
 -  [timeseries_openapi.json](/Lab_2b_Files/timeseries_openapi_new.json)
@@ -63,9 +63,9 @@ Files used in lab can be downloaded from the following links:
 
     ![Modified timeseries openapi](imgs/imgs_2b/step_5.png)
 
-1. Save the script.
+    Save the script.
 
-1. Click "Add from file or MCP server".
+    Click "Add from file or MCP server".
 
     ![Add from file or MCP server](imgs/imgs_2b/step_6.png)
 
@@ -73,7 +73,7 @@ Files used in lab can be downloaded from the following links:
 
     ![Upload json file](imgs/imgs_2b/step_8.png)
 
-1. Select the listed operation and press Done.
+    Select the listed operation and press Done.
 
     ![Select operations](imgs/imgs_2b/step_9.png)
 
