@@ -9,9 +9,8 @@ nav_order: 3
 In this lab, you will build a Supplier Researcher Agent using Watsonx.ai Agent Lab. This agent will allow you to research the suppliers for procuring Xtralife based on past supplier performance, procurement rules and customer reviews.
 
 Files used in lab can be downloaded from the following links:
--  [Procurement Requisition Rules.docx](./pdfs/Procurement%20Requisition%20Rules.docx)
-- [Supplier Sales Report for Procurement.docx](./pdfs/Supplier%20Sales%20Report%20for%20Procurement.docx)
-
+-  [Procurement Requisition Rules_update.pdf](/Lab_2a_Files/Procurement%20Requisition%20Rules_update.pdf)
+- [Supplier Sales Report for Procurement_update.pdf](/Lab_2a_Files/Supplier%20Sales%20Report%20for%20Procurement_update.pdf)
 ## Step by step instructions to build the Supplier Researcher Agent:
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
@@ -42,33 +41,60 @@ Files used in lab can be downloaded from the following links:
 
 1. Choose "Upload files" and click "Next".
 
-    ![image](./imgs/lab-3a/hr_step_uploadfile.png)
-
-1. Drag and drop the [Procurement Requisition Rules.docx](./pdfs/Procurement%20Requisition%20Rules.docx) and [Supplier Sales Report for Procurement.docx](./pdfs/Supplier%20Sales%20Report%20for%20Procurement.docx) and click on **Next**:
-
     ![image](./imgs/imgs_2a/step_6.png)
+
+1. Drag and drop the [Procurement Requisition Rules_update.pdf](/Lab_2a_Files/Procurement%20Requisition%20Rules_update.pdf) and [Supplier Sales Report for Procurement_update.pdf](/Lab_2a_Files/Supplier%20Sales%20Report%20for%20Procurement_update.pdf) and click on **Next**:
+
+    ![image](./imgs/imgs_2a/step_7.png)
 
 1. Copy the following description into the **Description** section and click **Save**:
 
     ```
-    This knowledge is used to provide requisition rules and supplier reviews. Assume that all the reviews selected are from the suppliers who are supplying Xtralife product.
+    Use this knowledge base when you need to understand the procurement requisition rules and information related to Xtralife suppliers. 
     ```
 
-    ![image](./imgs/lab-3a/hr_step_desc.png)
+    ![image](./imgs/imgs_2a/step_8.png)
 
     The knowledge base will take some time to create. After the knowledge base is done, you will be brought back to the Agent Builder UI.
 
-    ![image](./imgs/lab-3a/hr_step_kbase.png)
+    <!-- ![image](./imgs/lab-3a/hr_step_kbase.png) -->
 
 
 1. Scroll down to the **Behavior** section. Insert the instructions below into the **Instructions** field:
 
     ```
-    Use your knowledge base to answer general questions about employee benefits. 
+    You are a helpful supplier researcher that uses information available to you to answer questions.
+    When you receive a user question, you are to use the knowledge source to look for relevant information. Then you must use Tavily search tool to enrich your information on the suppliers. 
+    You must gather information from both knowledge source and search tool before generating an answer.
+    You must use information from both search methods to generate a complete and comprehensive answers. 
     ```
 
-    ![image](./imgs/lab-3a/hr_step12.png)
+    ![image](./imgs/imgs_2a/step_9.png)
 
+1. lets see how to add the web crawl tool to your agent, go to **Toolset** section and click **Add tool**.
+
+     ![image](./imgs/imgs_2a/step_10.png)
+
+1. Click **Add from file or MCP server**.
+
+     ![image](./imgs/imgs_2a/step_11.png)
+
+1. Click **Import from MCP server**
+
+     ![image](./imgs/imgs_2a/step_12.png)
+
+1. Click **Add MCP server**  
+
+     ![image](./imgs/imgs_2a/step_13.png)
+
+1. Name, description fill in as you like. Select Connection, click **Workshop_tavily**, Install Command : ``` npx -y tavily-mcp@0.2.1 ```, and Click **Connect**
+
+     ![image](./imgs/imgs_2a/step_14.png)
+
+1. Once connected turn **ON** the **tavily-search** tool.
+
+    ![image](./imgs/imgs_2a/step_15.png)
+    
 1. Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshot(s) below:
 
     ```
@@ -77,8 +103,16 @@ Files used in lab can be downloaded from the following links:
     ```
     Which supplier should i choose? i want an urgent delivery.
     ```
-
-    ![image](./imgs/lab-3a/hr_step13.png)
+    ```
+    Give me a list of pros and cons Excelentia Supplies and Global Office Supplies
+    ```
+    ```
+    Which supplier should i choose? i want an urgent delivery.
+    ```
+    ```
+    How are the reviews for Excelentia Supplies?
+    ```
+    ![image](./imgs/imgs_2a/step_16.png)
 
 
 **Congratulations! You've built your RAG Agent.**
