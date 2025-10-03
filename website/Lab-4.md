@@ -4,7 +4,7 @@ title: Lab 4
 # permalink: /lab3/
 nav_order: 6
 ---
-🧑‍💼 AskProcurement Lab 4: Multi-Agent Collaboration
+🏦 AskProcurement Lab 4: Multi-Agent Collaboration
 =================================================================================
 
 In the final lab, we will extend our AskProcurement agent to be even more powerful by using its multi-agent capabilities. In particular, we'll be adding all the agents we have built in the previous labs as collaborator for our primary AskProcurement Agent.

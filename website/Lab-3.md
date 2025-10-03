@@ -4,7 +4,7 @@ title: Lab 3
 # permalink: /lab3/
 nav_order: 5
 ---
-🧑‍💼 AskProcurement Lab 3: Introduction to Flows for Agents
+🏦 AskProcurement Lab 3: Introduction to Flows for Agents
 =================================================================================
 
 In this lab, we will focus on a new way to create a tool - Flows!
