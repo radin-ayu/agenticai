@@ -83,7 +83,37 @@ Step-by-step instructions
 
     <img src="./imgs/imgs_3/lab3_createflow6.png" alt="image" width="700" />
 
-1. We will start creating the flow by inserting a branch to check the total reorder value. We will need to multiply both the inputs.<br>From the tools menu, drag out a **Branch** tool on to the flow. Ensure that the tool snaps on the flow.
+1. Next, we will also need to create a variable to keep track of the total reorder value. Click on the green triangle to get the following pop out. Click on the pencil icon next.
+    <img src="./imgs/imgs_3/lab3_createvar.png" alt="image" width="500" />
+
+1. Then click on **Add** and **Decimal**
+    <img src="./imgs/imgs_3/lab3_createvar1.png" alt="image" width="500" />
+
+1. Input the following
+
+    Name: total_value
+    Description: Total reorder value
+
+    Click **Add**
+    <img src="./imgs/imgs_3/lab3_createvar1.png" alt="image" width="500" />
+    
+1. We will start creating the flow by inserting a branch to check the total reorder value. We will need to multiply both the inputs.<br>From the tools menu, drag out a **Code Block**. Ensure that the tool snaps on the flow.
+
+    <img src="./imgs/imgs_3/lab3_createcode.png" alt="image" width="500" />
+
+1. Click on the code block tile  and click on Open code editor. 
+
+    <img src="./imgs/imgs_3/lab3_createcode1.png" alt="image" width="500" />
+
+1. In the empty space, start typing `flow` and there will be suggestions appearing. Select `flow.private.total_value`.
+
+    <img src="./imgs/imgs_3/lab3_createcode2.png" alt="image" width="500" />
+
+1. Continue to type out the expression until you get the following.
+
+    <img src="./imgs/imgs_3/lab3_createcode3.png" alt="image" width="500" />
+
+1. Now let's have different action for different situation. Drag out a **Branch** tool on to the flow. 
 
     <img src="./imgs/imgs_3/lab3_createflow7.png" alt="image" width="500" />
 
@@ -103,25 +133,25 @@ Step-by-step instructions
 
     <img src="./imgs/imgs_3/lab3_createflow11.png" alt="image" width="500" />
 
-    Swith to **Expression Editor**
 
     <img src="./imgs/imgs_3/lab3_createflow12.png" alt="image" width="500" />
 
-1. In the empty space, start typing `flow` and there will be suggestions appearing. Select `flow.input.reorder_quantity`
+1. Click on the **+** beside the if and switch to **Flow variable** and select **total_value**
 
     <img src="./imgs/imgs_3/lab3_createflow13.png" alt="image" width="500" />
     
-    Continue writing the expression until you get the following
 
     <img src="./imgs/imgs_3/lab3_createflow14.png" alt="image" width="500" />
 
-    Once you're done click the Back arrow.
+    Select the **>** sign from the drop down and change the value to 150000.
 
     <img src="./imgs/imgs_3/lab3_createflow15.png" alt="image" width="500" />
 
+    <img src="./imgs/imgs_3/lab3_createflow16.png" alt="image" width="500" />
+
 1. You can also try to rename the path by clicking on Path 1 and Path 2
 
-    <img src="./imgs/imgs_3/lab3_createflow16.png" alt="image" height="200" /> <img src="./imgs/imgs_3/lab3_createflow17.png" alt="image" height="200" />
+     <img src="./imgs/imgs_3/lab3_createflow17.png" alt="image" height="200" />
 
     <img src="./imgs/imgs_3/lab3_createflow18.png" alt="image" height="200" />
 
