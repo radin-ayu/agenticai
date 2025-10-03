@@ -87,14 +87,17 @@ Step-by-step instructions
     <img src="./imgs/imgs_3/lab3_createvar.png" alt="image" width="500" />
 
 1. Then click on **Add** and **Decimal**
+
     <img src="./imgs/imgs_3/lab3_createvar1.png" alt="image" width="500" />
 
 1. Input the following
 
     Name: total_value
+
     Description: Total reorder value
 
     Click **Add**
+
     <img src="./imgs/imgs_3/lab3_createvar1.png" alt="image" width="500" />
     
 1. We will start creating the flow by inserting a branch to check the total reorder value. We will need to multiply both the inputs.<br>From the tools menu, drag out a **Code Block**. Ensure that the tool snaps on the flow.
@@ -166,6 +169,12 @@ Step-by-step instructions
     <img src="./imgs/imgs_3/lab3_createflow20.png" alt="image" width="500" />
 
 1. Create a input variable
+
+    <img src="./imgs/imgs_3/lab3_createprompt1.png" alt="image" width="500" />
+
+    Name the variable "total value" and Click Add.
+
+    <img src="./imgs/imgs_3/lab3_createprompt.png" alt="image" width="500" />
 
 1. Copy and paste the following into the system prompt and User prompt
 
