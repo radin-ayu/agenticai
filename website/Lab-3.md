@@ -4,101 +4,224 @@ title: Lab 3
 # permalink: /lab3/
 nav_order: 5
 ---
-🧑‍💼 AskHR Lab 3: Multi-Agent Collaboration
+🧑‍💼 AskProcurement Lab 3: Introduction to Flows for Agents
 =================================================================================
 
-In the final lab, we will extend our AskHR agent to be even more powerful by using its multi-agent capabilities. In particular, we'll add one more specialized agents as collaborator for our primary HR Agent.
+In this lab, we will focus on a new way to create a tool - Flows!
 
-*   The agent will specializes in questions about an employee's health insurance plan
+**Why do we need flows?** **Agentic AI seems to be able to perform what I want, I don't want to design any flows**
 
-Note that in this agent, you will be using some pre-imported tools (rather than importing them yourself).
+While agents seems like they are able to perform tasks to fulfill users' requests using the tools available to them, there are still situations where a deterministic flow is important. For example in a procurement scenario, the agent must take necessary steps and put out a suitable alert if the order is over the company's agreeable amount. 
+
+In this lab, we will design a flow which will take in reorder quantity and supplier's unit price from previous labs and determine if the order is over the approved amount (as stated in the procurement requisition documents). The flow will also generate emails addressed to relevant parties for approval if necessary.
+
+A summary of the flow we are going to perform is as below:
+
+<img src="./imgs/imgs_3/lab3_flow.png" alt="image" width="700" />
+
+
 
 Step-by-step instructions
 =========================
 
 1.  Go to "Manage Agents"  
-    ![image](./imgs/lab-4/hr_c_step7.png)
+    <img src="./imgs/imgs_3/lab3_manage.png" alt="image" width="500" />
+
 1.  Click "Create Agent"
+
+    <img src="./imgs/imgs_3/lab3_create.png" alt="image" width="500" />
+
 1.  Type the following:  
-    Name: \[Your Initials\]\_employee\_healthcare\_agent  
+    Name: \[Your Initials\]\_askProcurement
+
     Description:
+
     ```
-    You are an agent who specializes in customer care for a large healthcare institution. You should be compassionate to the user.
-    You are able to answer questions around benefits provided by different plans, the status of a claim, and are able to help direct people to the nearest provider for a particular ailment.
+    You are an agent who specializes in procurement processes.
+    You help the procurement officer with processes such as supplier research, calculating reorder amount and placing orders.
+    Example of command: I want to reorder product Xtralife.
     ```
-    ![image](./imgs/lab-4/hr_c_step9.png) 
-1.  Once the \[your\_initials\]\_employee\_healthcare\_agent has been created, scroll down to Toolset > Add Tool and add the following tools from local instance 
-    ![image](./imgs/lab-4/hr_c_step10.png)
-    ![image](./imgs/lab-4/hr_c_step10_2.png)
-1.  Go back to "Manage Agents"
-1.  Click back into \[Your\_Initial\]\_HR\_Agent agent.
-
-    ![image](./imgs/lab-4/hr_c_step11.png)
-1.  Scroll down to Toolset > Agents and click "Add agent" button  
-
-    ![image](./imgs/lab-4/hr_c_step13.png)
-1.  Click "Add from local instance"  
-
-    ![image](./imgs/lab-4/hr_c_step14.png)
-1.  Add the \[Your Initials\]\_employee\_healthcare\_agent and \[Your Initials\]\_Employee Address as collaborators.
-
-    ![image](./imgs/lab-4/hr_c_step_2agent.png)
-1.  Scroll up & update the agent **Description**:
-    ```
-    You are an agent who handles employee HR queries. You provide short and crisp responses, keeping the output to 200 words or less. You can help users check their profile data, update their addresses within the SAP system.You can also reroute to an employee_healthcare_agent for answering questions related to employee health insurance policies, providers/doctors, medical claims.
-    ```
-1. Select the Agent Style as "React".
-    ![image](./imgs/lab-4/hr_agent_style.png)
-
-1. Now, we will add a whole new prebuilt agent as a collaborator. 
-    ![image](./imgs/lab-4/hr_c_step_addleave1.png)
-
-    ![image](./imgs/lab-4/hr_c_step_addleave2.png)
-
-    ![image](./imgs/lab-4/hr_c_step_addleave3.png)
-1. Scroll down and update the agent **Behavior**
-    ```
-    Use your knowledge base to answer general questions about employee benefits. For any questions related to benefits/incentives that are unrelated to healthcare, refer to your KNOWLEDGE.
+    <img src="./imgs/imgs_3/lab3_step1.png" alt="image" width="700" />
+1.  Once the \[Your Initials\]\_askProcurement has been created, scroll down to Toolset > Add Tool and click on **Create an agentic workflow**.
+    <img src="./imgs/imgs_3/lab3_createflow.png" alt="image" width="500" />
     
-    Reroute to the employee_healthcare_agent for any queries related to healthcare, medical appointments, healthcare providers (doctors), and health insurance, and use the outputs from this agent to respond.
+1.  You will see the following UI once the tool settings are loaded.
+
+    <img src="./imgs/imgs_3/lab3_flowui.png" alt="image" width="500" />
+
+    **TIPS:**
+    If your menu pane does not appear, you can click on the **+** button to bring it out.
+
+    <img src="./imgs/imgs_3/lab3_menu.png" alt="image" width="500" />
+1.  Just like an agent, we will also need to name and describe our tool. Click on the pencil icon on the top left corner.
+
+    <img src="./imgs/imgs_3/lab3_createflow1.png" alt="image" width="500" />
+1.  Fill up the following fields:
+
+    Name: \[Your Initials\]_Check reorder quantity
+
+    Description: The flow to check reorder quantity and generate relevant email templates or message
+
+    <img src="./imgs/imgs_3/lab3_createflow2.png" alt="image" width="500" />
+1.  After that, move downwards where we can define inputs to the flow. Click on **Add input**  
+
+    <img src="./imgs/imgs_3/lab3_createflow3.png" alt="image" width="500" />
+1.  We are creating 2 inputs. Follow details shown in the table below
+
+    | Type     | Name            | Description                               | Required        |
+    |----------|-----------------|-------------------------------------------|-----------------|
+    | Decimal  | supplier_price  | The unit price of Xtralife for a supplier | On              | 
+    | Integer  | reorder_quantity| Amount to reorder                         | On              |
     
-    Reroute to the Employee Address agent when there are any request to update address of an employee. Ensure that you have all the information before you trigger the agent. If you need more information, get it from user.
+    Example of how to create inputs:
 
-    If the user wants to request for leave, route it to Leave Management agent. The location used must be SGP. Ensure that you have all the information before you trigger the agent. If you need more information, get it from user.
+    <img src="./imgs/imgs_3/lab3_createflow4.png" alt="image" width="500"/>
 
-    After rerouting to any agent, be sure to return the agent's output in any subsequent query to the supervisor agent.
-    ```
-1.  Next let's refresh the page and then test our end-to-end AskHR demo.
-1. Your results should mostly match the results in the [**demo\_video.mov**](https://ibm.box.com/s/0il7rzhoes6ii9jv12lun88he0kudnuc).<br>
-    **Note**: if you are prompted for any name or email address, use the email address below based on the location you are attending the workshop.
+    <img src="./imgs/imgs_3/lab3_createflow5.png" alt="image" width="500" />
+
+1. You will have a resulting table as below. Click on **Save** when you're done.
+
+    <img src="./imgs/imgs_3/lab3_createflow6.png" alt="image" width="700" />
+
+1. We will start creating the flow by inserting a branch to check the total reorder value. We will need to multiply both the inputs.<br>From the tools menu, drag out a **Branch** tool on to the flow. Ensure that the tool snaps on the flow.
+
+    <img src="./imgs/imgs_3/lab3_createflow7.png" alt="image" width="500" />
+
+    <img src="./imgs/imgs_3/lab3_createflow8.png" alt="image" height="500" />
+
+1. Now, we will add the branching condition. Click on the purple diamond shape and a menu will pop out for you.  
+    <img src="./imgs/imgs_3/lab3_createflow9.png" alt="image" height="500" />
     
-    | Location | email    |
-    |----------|----------|
-    | Singapore| jamie.tan@bestrun.sg  |
-    | Malaysia | jamie.tan1@bestrun.sg |  
+1. Hover on **Branch1** and click on the pencil icon. Rename Branch 1 to **Total Value Check** and click the tick icon.
+     <img src="./imgs/imgs_3/lab3_createflow10.png" alt="image" width="500" />
+
+1. Now let's add the different conditions based on this flow.
+
+    <img src="./imgs/imgs_3/lab3_flow.png" alt="image" width="400" />
+
+    Click on **Edit Condition**
+
+    <img src="./imgs/imgs_3/lab3_createflow11.png" alt="image" width="500" />
+
+    Swith to **Expression Editor**
+
+    <img src="./imgs/imgs_3/lab3_createflow12.png" alt="image" width="500" />
+
+1. In the empty space, start typing `flow` and there will be suggestions appearing. Select `flow.input.reorder_quantity`
+
+    <img src="./imgs/imgs_3/lab3_createflow13.png" alt="image" width="500" />
+    
+    Continue writing the expression until you get the following
+
+    <img src="./imgs/imgs_3/lab3_createflow14.png" alt="image" width="500" />
+
+    Once you're done click the Back arrow.
+
+    <img src="./imgs/imgs_3/lab3_createflow15.png" alt="image" width="500" />
+
+1. You can also try to rename the path by clicking on Path 1 and Path 2
+
+    <img src="./imgs/imgs_3/lab3_createflow16.png" alt="image" height="200" /> <img src="./imgs/imgs_3/lab3_createflow17.png" alt="image" height="200" />
+
+    <img src="./imgs/imgs_3/lab3_createflow18.png" alt="image" height="200" />
+
+1. Click anywhere to return to the canvas. For the path with more than 150k, we want the flow to assist in generating an email template to seek approval from senior management.
+
+    From the menu, drag and snap **Generative prompt** tile on to the flow.
+
+    <img src="./imgs/imgs_3/lab3_createflow19.png" alt="image" width="500" />
+
+    You will be presented with a UI where you can design prompts.
+
+    <img src="./imgs/imgs_3/lab3_createflow20.png" alt="image" width="500" />
+
+1. Create a input variable
+
+1. Copy and paste the following into the system prompt and User prompt
+
+    System prompt:
 
     ```
-    I want to apply for childcare leave for a day.
-    ```
-    ```
-    jamie.tan@bestrun.sg
+    You are a helpful system assistant. Your task is to help a purchasing officer to craft an email.
+    
     ```
 
-* Feature demonstrated: call a prebuilt collaborator agent
-
-
-    ```
-    I need to bring my son for a follow up appointment with his specialist for his ear infection. Can you remind me of what would be my copayment amount if I’m under HDHP in-network?
-    ```
-
-* Feature demonstrated: reroute to collaborator agent & call tool
+    User prompt:
 
     ```
-    I wanted to bring him to a different doctor this time - for a second opinion - can you recommend one near Lowell?
+    Based on the reorder value {reorder_value}, you are to generate an email to your sales manager, Mr Wong, to seek approval this reorder value. This reorder value is over the approved budget of $150000. You can create a reason for this order such as nearing festivities and you foresee that there is a surge in sales for the product Xtralife. Be professional and avoid long-winded explanation.
+    
     ```
 
-* Feature demonstrated: reroute to collaborator agent & call tool
+    <img src="./imgs/imgs_3/lab3_createflow21.png" alt="image" width="500" />
+
+1. Now we need to associate the calculated total reorder value with the input variable for our prompt to generate the email.
+
+   Click on the Generative Prompt tile on our flow and then click on Data Mapping
+
+   <img src="./imgs/imgs_3/lab3_createflow22.png" alt="image" width="500" />
+
+   <img src="./imgs/imgs_3/lab3_createflow23.png" alt="image" width="500" />
+
+   As you can see, we can actually leave the mapping to AI. However, since we want to be very sure that the input is captured correctly, we will map it manually.
+
+1. Once you hover on the input bar, click on the variable icons. 
+
+    <img src="./imgs/imgs_3/lab3_createflow24.png" alt="image" width="500" />
+
+    Switch to **Flow variables** and select **reorder value**.
+
+    <img src="./imgs/imgs_3/lab3_createflow25.png" alt="image" width="500" />
+
+1. After the email is being generated by the LLM, we want to display it to the user. We will drag in a **User activity** tile into the flow.
+
+    <img src="./imgs/imgs_3/lab3_createflow26.png" alt="image" width="500" />   
+
+1. Hover in the green box and click on the **+**.
+
+    <img src="./imgs/imgs_3/lab3_createflow27.png" alt="image" width="500" />   
+
+1. Select **Display to user** and the **Message** tile.
+
+    <img src="./imgs/imgs_3/lab3_createflow28.png" alt="image" width="500" />   
+
+    <img src="./imgs/imgs_3/lab3_createflow29.png" alt="image" width="500" />  
+
+1. Click on the **Message** tile to get the following pop out.
+
+    <img src="./imgs/imgs_3/lab3_createflow30.png" alt="image" width="500" />  
+
+1. Click on the variable icon, switch to **Generative prompt** and click on **value**
+
+    <img src="./imgs/imgs_3/lab3_createflow31.png" alt="image" width="500" />  
+
+1. Next, let's repeat the above steps to create a notification to let user know that their order has been placed when their order is below $150,000.
+
+    Click on the **Add** icon and select **User activity**.
+
+    <img src="./imgs/imgs_3/lab3_createflow32.png" alt="image" width="500" />  
+
+1. Hover in the green box and click on the **+**.
+
+    <img src="./imgs/imgs_3/lab3_createflow27.png" alt="image" width="500" />   
+
+1. Select **Display to user** and the **Message** tile.
+
+    <img src="./imgs/imgs_3/lab3_createflow28.png" alt="image" width="500" />   
+
+    <img src="./imgs/imgs_3/lab3_createflow29.png" alt="image" width="500" />  
+
+1. Click on the **Message** tile to get the following pop out.
+
+    <img src="./imgs/imgs_3/lab3_createflow30.png" alt="image" width="500" />  
+
+1. Copy and paste the following message.
 
     ```
-    I also need to update my address
+    Your order is approved. You can proceed to place your order.
     ```
+
+    <img src="./imgs/imgs_3/lab3_createflow33.png" alt="image" width="500" />  
+
+1. Now that our flow is done, we can click on **Done** on the top right corner.
+
