@@ -54,7 +54,6 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
     ![image](./imgs/imgs_1/use_template.png)
 
 6. You will be presented with the Agent Builder page.
-    ![image](./imgs/imgs_1/agent_builder_page.png)
    
 7. Edit the name so that it is unique. Change the agent’s name to [Your Initial]_Account management.
    ![image](./imgs/imgs_1/agent_name.png)
