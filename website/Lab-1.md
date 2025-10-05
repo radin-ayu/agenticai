@@ -16,9 +16,9 @@ Pre-configured: Prebuilt agents come with pre-defined settings and configuration
 Reusable: Prebuilt agents can be used across multiple workflows, reducing the need to recreate similar tasks.
 Task-specific: Each prebuilt agent is designed to perform a specific task or set of tasks, such as data processing, API calls, or notifications.
     
-In this lab, you will build a Procurement Agent using Watsonx Orchestrate. This agent will allow you to generate the information about all the accounts. You can also enquire about any specific account details.   
+In this lab, you will build a Procurement Agent using watsonx Orchestrate. This agent will allow you to generate the information about all the accounts. You can also enquire about any specific account details.   
 
-We are leveraging Prebuild agants and tools. The tools we are using in this lab, are from Salesforce. We have already integrated two tools here "Retrieve Salesforce accounts" and "Retrieve Salesforce contacts" to demonstrate the watsonx Orchestrate capabilities to connect with different third party tools. 
+We are leveraging Prebuild agents and tools. The tools we are using in this lab, are from Salesforce. We have already integrated two tools here "Retrieve Salesforce accounts" and "Retrieve Salesforce contacts" to demonstrate the watsonx Orchestrate capabilities to connect with different third party tools. 
 The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of prebuilt AI agents and tools, designed to support a wide range of business functions and use cases. Whether you're looking to automate tasks, enhance productivity, or integrate with backend systems, the catalog helps you find the right solutions quickly and efficiently.
 
 ## Let's start our IBM watsonx Orchestrate learning journey: 
@@ -88,13 +88,13 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
 
 19. After building the agent, we can deploy our agent. Click the “Deploy” button on the top right. Keep all default settings when being asked.
     ![image](./imgs/imgs_1/deploy.png)
-21. You will see the "Pre-deployment summary" to review all the changes / updates you made to your agent. You can also see the total connections, you created to the third party tools. In our example, it is "Salesforce".
+20. You will see the "Pre-deployment summary" to review all the changes / updates you made to your agent. You can also see the total connections, you created to the third party tools. In our example, it is "Salesforce".
     ![image](./imgs/imgs_1/pre_deployment.png)
-22. Once the deployment is success, navigate to “Chat” from the left-hand hamburger menu.
+21. Once the deployment is success, navigate to “Chat” from the left-hand hamburger menu.
     ![image](./imgs/imgs_1/chat.png)
-23. From the dropdown menu, select your agent.
+22. From the dropdown menu, select your agent.
     ![image](./imgs/imgs_1/agent_selection.png)
-24. Now, you can use use your agent. Try to ask some queries. "Generate the information of all the accounts"  
+23. Now, you can use use your agent. Try to ask some queries. "Generate the information of all the accounts"  
 
 
 **Congratulations! You've built your first Procurement Agent using Pre-build agents and tools.**
