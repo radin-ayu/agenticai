@@ -23,87 +23,79 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
 
 ## Let's start our IBM watsonx Orchestrate learning journey: 
 
-## Step by step instructions to build the Supplier Researcher Agent:
+### Step by step instructions to build the Pre-built Procurement Agent:
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
 
-    ![image](./imgs/imgs_a/step_1.png)
+    ![image](./imgs/imgs_1/step_1.png)
 
-1. Click on the down arrow next to **Build**.  Then click on **Agent Builder**:
+### Discovering the Catalog
+1. From the hamburger menu on the top left corner, select “Discover”
+    ![image](./imgs/imgs_1/discover.png)
+2. You will be presented with this view
+    ![image](./imgs/imgs_1/catalog_view.png)
 
-    ![image](./imgs/imgs_a/step_2.png)
+3. Currently, all the prebuilt agents and tools are separated into many domains/categories (in this view you can see aroud 12 different categories of the domain)
+4. Feel free to click on one of the categories and see what is available for you.
+5. In this lab, we will be using prebuilt agents and tools from the IT category.
 
-1. Click on **Create agent +**:
+### Building an Procurement Agent
 
-    ![image](./imgs/imgs_a/step_3.png)
+1. Go back to the hamburger menu and click on “Discover” again if you’ve navigated away.
+2. On the search bar, search for “Account Management” and hit Enter. Click on the “Account Management” agent once the search result comes back.
+   ![image](./imgs/imgs_1/account_management_agent.png)
 
-1. Select "Create from scratch", give your agent a unique name (make sure to identify yourself by your initials or name, since this is a shared instance), e.g. "[Your Initial]_Supplier_Researcher Agent", and fill in the description as shown below: 
-
-    ```
-    You are a helpful supplier researcher that uses tools to answer questions precisely after doing thorough research on google and document search. The google search tool can provide customer sentiment on the suppliers. The document search tool has the procurement requisition rules and past year supplier review.
-    ```  
-
-    Click on **Create**:
-
-    ![image](./imgs/imgs_a/step_4.png)
-
-1. We are going to build a knowledge base for the agent. Scroll down the screen to the **Knowledge** section and click on "Choose knowledge".
-
-    ![image](./imgs/imgs_a/step_5.png)
-
-1. Choose "Upload files" and click "Next".
-
-    ![image](./imgs/lab-3a/hr_step_uploadfile.png)
-
-1. Drag and drop the [Procurement Requisition Rules.docx](./pdfs/Procurement%20Requisition%20Rules.docx) and [Supplier Sales Report for Procurement.docx](./pdfs/Supplier%20Sales%20Report%20for%20Procurement.docx) and click on **Next**:
-
-    ![image](./imgs/imgs_a/step_6.png)
-
-1. Copy the following description into the **Description** section and click **Save**:
-
-    ```
-    This knowledge is used to provide requisition rules and supplier reviews. Assume that all the reviews selected are from the suppliers who are supplying Xtralife product.
-    ```
-
-    ![image](./imgs/lab-3a/hr_step_desc.png)
-
-    The knowledge base will take some time to create. After the knowledge base is done, you will be brought back to the Agent Builder UI.
-
-    ![image](./imgs/lab-3a/hr_step_kbase.png)
+3. Once you clicked on the “Account Management”, you will be presented with this view.
+   ![image](./imgs/imgs_1/agent_view.png)
 
 
-1. Scroll down to the **Behavior** section. Insert the instructions below into the **Instructions** field:
+4. You will be able to see what this agent is doing, the tools it is using. From this page, we will be able to assess if this agent is suitable for your use case.
+5. To use this agent, click on the “Use as template” button on the top right.
+    ![image](./imgs/imgs_1/use_template.png)
 
-    ```
-    Use your knowledge base to answer general questions about employee benefits. 
-    ```
+6. You will be presented with the Agent Builder page.
+    ![image](./imgs/imgs_1/agent_builder_page.png)
+   
+7. Edit the name so that it is unique. Change the agent’s name to [Your Initial]_Account management.
+   ![image](./imgs/imgs_1/agent_name.png)
+   
+8. Save the new name to the agent. 
+   ![image](./imgs/imgs_1/save_name.png)
 
-    ![image](./imgs/lab-3a/hr_step12.png)
+9. Now, It all set. Your agent is ready. Keep the rest of the agent set up as it is and let’s explore the agent. You can see the "Model" at top and "Profile", "Knowledge", "Toolset", "Behaviour" and "Channel" at the left side. Just explore one by one to get an understanding on the different blocks of the agent.
+    ![image](./imgs/imgs_1/agent_blocks.png)
+   
+10. Let's explore the "Preview" window given in the right side. In the “Preview” panel on the right, You can try some queries to test the performance of the agent at your local.
+    ![image](./imgs/imgs_1/preview.png)
 
-1. Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshot(s) below:
+11. In the “Preview” panel on the right, let’s try one query. as "Generate the information of all the accounts" or "show all the accounts"
+    ![image](./imgs/imgs_1/preview.png)
 
-    ```
-    Which supplier out of Excelentia Supplies and Global Office Supplies is viable to buy product Xtralife from. Give a list of pros and cons of each supplier
-    ```
-    ```
-    Which supplier should i choose? i want an urgent delivery.
-    ```
+12. If you face any problem with step 11, please alert one of your friendly instructors.
+13. Prebuilt agents present an easy way to build an agent. However, we can also edit the prebuilt agent. Let’s explore a bit by adding an extra tool into this agent.
+14. Click on "Toolset" from the leftside panel or Scroll down to the toolset and click on “Add tool”.
+    ![image](./imgs/imgs_1/add_tool.png)
 
-    ![image](./imgs/lab-3a/hr_step13.png)
+15. Click on “Add from catalog”.
+     ![image](./imgs/imgs_1/ad_frm_catalog.png)
+
+16. On the search bar, type in “salesforce”. Select “Get the list of users from Salesforce” from the search result.  
+    ![image](./imgs/imgs_1/list_user_tool.png)
+17. After you click on the tool, you will be able to see the input and output the tool is expecting. Once you’re ready, click on “Add to agent” on the bottom right.
+    ![image](./imgs/imgs_1/add_tool_agent.png)
+
+18. Once returned to the agent builder page, you will see the additional tool added to the tools list.
+    ![image](./imgs/imgs_1/added_tool_list.png)
+
+19. After building the agent, we can deploy our agent. Click the “Deploy” button on the top right. Keep all default settings when being asked.
+    ![image](./imgs/imgs_1/deploy.png)
+21. You will see the "Pre-deployment summary" to review all the changes / updates you made to your agent. You can also see the total connections, you created to the third party tools. In our example, it is "Salesforce".
+    ![image](./imgs/imgs_1/pre_deployment.png)
+22. Once the deployment is success, navigate to “Chat” from the left-hand hamburger menu.
+    ![image](./imgs/imgs_1/chat.png)
+23. From the dropdown menu, select your agent.
+    ![image](./imgs/imgs_1/agent_selection.png)
+24. Now, you can use use your agent. Try to ask some queries. "Generate the information of all the accounts"  
 
 
-
-1. You can try the following sample questions as well:
-
-    ```
-    how many days of leave am i entitled to?
-    ```
-    ```
-    can i work from home 3 times a week?
-    ```
-    ```
-    does the company provide any assistance on loan repayments?
-    ```
-    Notice that you get a generic answers based on policy for all employees. You will see in the next lab how you can connect it to Employee Address Agent and Leave Management Agent from Lab 1 to do tasks for you.
-
-**Congratulations! You've built your RAG Agent.**
+**Congratulations! You've built your first Procurement Agent using Pre-build agents and tools.**
