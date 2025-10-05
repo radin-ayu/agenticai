@@ -97,4 +97,4 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
 23. Now, you can use use your agent. Try to ask some queries. "Generate the information of all the accounts"  
 
 
-**Congratulations! You've built your first Procurement Agent using Pre-build agents and tools.**
+**Congratulations! You've built your first Procurement Agent using Pre-built agents and tools.**
