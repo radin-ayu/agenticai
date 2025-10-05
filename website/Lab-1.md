@@ -6,11 +6,12 @@ nav_order: 2
 ---
 # 🧑‍💼 Lab 1: Prebuilt Agents and Tools
     
-In this lab, you will build a Supplier Researcher Agent using Watsonx.ai Agent Lab. This agent will allow you to research the suppliers for procuring Xtralife based on past supplier performance, procurement rules and customer reviews.
+In this lab, you will build a Procurement Agent using Watsonx Orchestrate. This agent will allow you to generate the information about all the accounts. You can also enquire about any specific account details.   
 
-Files used in lab can be downloaded from the following links:
--  [Procurement Requisition Rules.docx](./pdfs/Procurement%20Requisition%20Rules.docx)
-- [Supplier Sales Report for Procurement.docx](./pdfs/Supplier%20Sales%20Report%20for%20Procurement.docx)
+We are leveraging Prebuild agants and tools. The tools we are using in this lab, are from Salesforce. We have already integrated two tools here "Retrieve Salesforce accounts" and "Retrieve Salesforce contacts" to demonstrate the watsonx Orchestrate capabilities to connect with different third party tools. 
+The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of prebuilt AI agents and tools, designed to support a wide range of business functions and use cases. Whether you're looking to automate tasks, enhance productivity, or integrate with backend systems, the catalog helps you find the right solutions quickly and efficiently.
+
+## Let's start our IBM watsonx Orchestrate learning journey: 
 
 ## Step by step instructions to build the Supplier Researcher Agent:
 
