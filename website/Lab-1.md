@@ -5,6 +5,16 @@ title: Lab 1
 nav_order: 2
 ---
 # 🧑‍💼 Lab 1: Prebuilt Agents and Tools
+
+## Objective
+The IBM watsonx Orchestrate catalog serves as a vast repository of prebuilt AI agents and tools, tailored to address a wide array of use cases and requirements. This extensive collection helps you discover agents, tools, or a blend of both that align with your specific needs. In this lab, we will use one of the prebuilt agents to demonstrate how easy it is for a user to start the agent-building journey.
+
+Each watsonx Orchestrate prebuilt agent and tool is connected to a service. Services require connections to be established. For this lab, we have already created the necessary connections.
+
+## Key features of prebuilt agents include:
+Pre-configured: Prebuilt agents come with pre-defined settings and configurations for easy setup.
+Reusable: Prebuilt agents can be used across multiple workflows, reducing the need to recreate similar tasks.
+Task-specific: Each prebuilt agent is designed to perform a specific task or set of tasks, such as data processing, API calls, or notifications.
     
 In this lab, you will build a Procurement Agent using Watsonx Orchestrate. This agent will allow you to generate the information about all the accounts. You can also enquire about any specific account details.   
 
