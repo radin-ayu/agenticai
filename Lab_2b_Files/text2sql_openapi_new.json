@@ -7,7 +7,7 @@
     },
     "servers": [
       {
-        "url": "https://text2sql-crewai.1soswfjkmeox.us-south.codeengine.appdomain.cloud/",
+        "url": "https://worshop-txt2sql-new.1soswfjkmeox.us-south.codeengine.appdomain.cloud",
         "description": "Deplopment server"
       }
     ],

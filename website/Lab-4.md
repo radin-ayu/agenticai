@@ -6,10 +6,13 @@ nav_order: 6
 ---
 🏦 AskProcurement Lab 4: Multi-Agent Collaboration
 =================================================================================
+Please refer to [Lab 4 Explanations](../pdfs/Lab%204-explanation.pdf) for additional information.
 
 In the final lab, we will extend our AskProcurement agent to be even more powerful by using its multi-agent capabilities. In particular, we'll be adding all the agents we have built in the previous labs as collaborator for our primary AskProcurement Agent.
 
-Step-by-step instructions
+![image](./imgs/imgs_4/lab-architecture4.png)
+
+Step-by-step Instructions
 =========================
 1.  In our \[Your\_Initial\]\_AskProcurement agent, scroll down to Toolset > Agents and click "Add agent" button
 
@@ -80,3 +83,5 @@ Step-by-step instructions
 * Feature demonstrated: Call a tool
 
     If the total value is more than the thereshold, you will receive an email template.
+
+**Congratulations! You’ve completed an end-to-end flow of this AskProcurement Agent.**

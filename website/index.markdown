@@ -22,7 +22,7 @@ Throughout the day, we will take you through
 | 10:15 – 10:20 | **Break** |
 | 10:20 – 10:30 | **Scaling Intelligence: Intro to watsonx Orchestrate and Feature Walkthrough**<br>Discover how orchestration transforms individual agents into enterprise-wide automation. Explore prebuilt agents, agent builder and tool builder. |
 | 10:30 – 10:45 | **Lab 1: Prebuilt Agents and Tools**<br>Browse the catalog and create your first agent from a prebuilt template |
-| 10:45 – 11:05 | **Lab Preview**<br>**Lab 2a: Building a Supplier Research Agent**<br>Build a Retrieval-Augmented Generation (RAG) agent capable of querying enterprise knowledge in real-time. |
+| 10:45 – 11:05 | **Lab Preview**<br>**Lab 2a: Building a Supplier Research RAG Agent**<br>Build a Retrieval-Augmented Generation (RAG) agent capable of querying enterprise knowledge in real-time. |
 | 11:05 – 11:25 | **Lab 2b: Integrate External Tools**<br>Connect your agent to business systems and workflows using APIs and external tools. |
 | 11:25 – 11:35 | **Break** |
 | 11:35 – 11:55 | **Lab 3: Tools Flow in Agents**<br>Chain multiple tools together in a decision flow |

@@ -8,6 +8,7 @@ nav_order: 5
 =================================================================================
 
 In this lab, we will focus on a new way to create a tool - Flows!
+![image](./imgs/imgs_3/lab-architecture3.png)
 
 **Why do we need flows?** **Agentic AI seems to be able to perform what I want, I don't want to design any flows**
 
@@ -17,13 +18,10 @@ In this lab, we will design a flow which will take in reorder quantity and suppl
 
 A summary of the flow we are going to perform is as below:
 
-<img src="./imgs/imgs_3/lab3_flow.png" alt="image" width="700" />
+<img src="./imgs/imgs_3/lab3_flow.png" alt="image" width="700" /><br><br>
 
-
-
-Step-by-step instructions
+Step-by-step Instructions
 =========================
-
 1.  Go to "Manage Agents"  
     <img src="./imgs/imgs_3/lab3_manage.png" alt="image" width="500" />
 
@@ -323,7 +321,4 @@ Step-by-step instructions
 
 1. From this testing, the agent still do not have all the information (supplier names, how much reorder quantity...). We had already built the previous agents for these features. Next lab, we will see how all agents can come together to form a multi-agent system
 
-
-
-
-
+**Congratulations! You’ve built an agentic flow in your AskProcurement Agent.**

@@ -15,6 +15,6 @@ nav_order: 1
 ![image](./imgs/imgs_intro/background.png)
 
 # Lab Architecture
-We will be building an AskProcurement Agent that allows the sales team to get insights on suppliers, calculate reorder quantity and automate product replenishment processing all in one platform. 
+We will be building an AskProcurement Agent that allows the sales team to get insights on suppliers, calculate reorder quantity and automate the product replenishment processing all in one platform. 
 
 ![image](./imgs/imgs_intro/lab-architecture.png)

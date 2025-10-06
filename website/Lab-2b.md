@@ -4,7 +4,7 @@ title: Lab 2b
 # permalink: /lab2/
 nav_order: 4
 ---
-# 🏦 AskProcurement Lab 2: Integrating External Tools
+# 🏦 AskProcurement Lab 2b: Integrating External Tools
 
 In this lab, you will build a Calculate Reorder Agent using Watsonx Orchestrate. This agent will allow you to integrate external tools: txt2sql (for querying stock data) and autoai (for time series forecasting), to calculate an optimal reorder quantity.
 
@@ -109,4 +109,4 @@ Files used in lab can be downloaded from the following links:
 
     ![alt text](imgs/imgs_2b/step_10.png)
 
-**Congratulations! You’ve built your RAG Agent.**
+**Congratulations! You’ve built your Calculate Reorder Agent and integrating it with external tools.**

@@ -5,8 +5,12 @@ title: Lab 2a
 nav_order: 3
 ---
 # 🏦 AskProcurement Lab 1: Building a Supplier Research RAG Agent
+
+Please refer to [Lab 2 Explanations](../pdfs/Lab%202a-explanation.pdf) for additional information.
     
 In this lab, you will build a Supplier Researcher Agent using Watsonx.ai Agent Lab. This agent will allow you to research the suppliers for procuring Xtralife based on past supplier performance, procurement rules and customer reviews.
+
+![image](./imgs/imgs_2a/lab-architecture2a.png)
 
 Files used in lab can be downloaded from the following links:
 -  [Procurement Requisition Rules_update.pdf](/Lab_2a_Files/Procurement%20Requisition%20Rules_update.pdf)
@@ -115,4 +119,4 @@ Files used in lab can be downloaded from the following links:
     ![image](./imgs/imgs_2a/step_16.png)
 
 
-**Congratulations! You've built your RAG Agent.**
+**Congratulations! You've built your first RAG Agent.**
