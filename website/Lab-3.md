@@ -158,7 +158,7 @@ Step-by-step instructions
 
     <img src="./imgs/imgs_3/lab3_createflow18.png" alt="image" height="200" />
 
-1. Click anywhere to return to the canvas. For the path with more than 150k, we want the flow to assist in generating an email template to seek approval from senior management.
+1. Click anywhere to return to the canvas. For the path with more than 100k, we want the flow to assist in generating an email template to seek approval from senior management.
 
     From the menu, drag and snap **Generative prompt** tile on to the flow.
 

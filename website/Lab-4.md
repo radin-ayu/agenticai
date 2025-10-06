@@ -23,48 +23,60 @@ Step-by-step instructions
 
     ![image](./imgs/imgs_4/step_3.png)
 
-1.  Scroll up & update the agent **Description**:
-    ```
-    You are an agent who handles employee HR queries. You provide short and crisp responses, keeping the output to 200 words or less. You can help users check their profile data, update their addresses within the SAP system.You can also reroute to an employee_healthcare_agent for answering questions related to employee health insurance policies, providers/doctors, medical claims.
-    ```
 
 1. Scroll down and update the agent **Behavior**
     ```
-    Use your knowledge base to answer general questions about employee benefits. For any questions related to benefits/incentives that are unrelated to healthcare, refer to your KNOWLEDGE.
-    
-    Reroute to the employee_healthcare_agent for any queries related to healthcare, medical appointments, healthcare providers (doctors), and health insurance, and use the outputs from this agent to respond.
-    
-    Reroute to the Employee Address agent when there are any request to update address of an employee. Ensure that you have all the information before you trigger the agent. If you need more information, get it from user.
+    If user ask about researching for supplier, you must route it to Supplier Research Agent.
 
-    If the user wants to request for leave, route it to Leave Management agent. The location used must be SGP. Ensure that you have all the information before you trigger the agent. If you need more information, get it from user.
+    If user wants to perform any product reordering, you will need to first run the Calculate Reorder Agent and you must use fetch_price_books tool to get the unit price for different suppliers for Xtralife. If you do not know which supplier to choose, you must clarify with the user. 
 
-    After rerouting to any agent, be sure to return the agent's output in any subsequent query to the supervisor agent.
+    Thereafter, trigger the Check flow tool to check the reorder quantity.
+
+    If the flow returns a message with order approved, proceed to create an order in Salesforce first using the create_order tool followed by create_product_in_order tool without any confirmation.
     ```
-1.  Next let's refresh the page and then test our end-to-end AskProcurement demo.
+1.  We will use the **Guideline** to control the behavior of our agent to be more accurate.
+
+    Fill in the following fields:
+
+    Name: Supplier Research
+
+    Condition: The customer request to research for Xtralife suppliers
+
+    Action: Use the Research Supplier Agent to run the research and output the research details.
+
+    ![image](./imgs/imgs_4/step_4.png)
+
+1. Next let's refresh the page and then test our end-to-end AskProcurement demo.
 
 1. Your results should mostly match the results in the [**demo\_video.mov**](https://ibm.box.com/s/97ykz714zpfvdx14j0o1hvbs5a6hrhd9).
     ```
-    I want to apply for childcare leave for a day.
-    ```
-    ```
-    jamie.tan@bestrun.sg
+    Research for Xtralife Suppliers
     ```
 
-* Feature demonstrated: call a prebuilt collaborator agent
+* Feature demonstrated: call a collaborator agent
 
 
     ```
-    I need to bring my son for a follow up appointment with his specialist for his ear infection. Can you remind me of what would be my copayment amount if I’m under HDHP in-network?
+    How much should I reorder for Xtralife next month?
     ```
 
-* Feature demonstrated: reroute to collaborator agent & call tool
+* Feature demonstrated: call a collaborator agent
+
+    After you get the reorder quantity:
 
     ```
-    I wanted to bring him to a different doctor this time - for a second opinion - can you recommend one near Lowell?
+    Can I check if this quantity fits our company policy?
     ```
 
-* Feature demonstrated: reroute to collaborator agent & call tool
+* Feature demonstrated: Call a flow tool
+
+    If you get the following response:
+    
+    **Your order is approved. You can proceed to place your order.**
 
     ```
-    I also need to update my address
+    Proceed to place order
     ```
+* Feature demonstrated: Call a tool
+
+    If the total value is more than the thereshold, you will receive an email template.
