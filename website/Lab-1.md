@@ -68,7 +68,7 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
     ![image](./imgs/imgs_1/preview.png)
 
 11. In the “Preview” panel on the right, let’s try one query. as "Generate the information of all the accounts" or "show all the accounts"
-    ![image](./imgs/imgs_1/preview.png)
+    ![image](./imgs/imgs_1/preview_outcome.png)
 
 12. If you face any problem with step 11, please alert one of your friendly instructors.
 13. Prebuilt agents present an easy way to build an agent. However, we can also edit the prebuilt agent. Let’s explore a bit by adding an extra tool into this agent.
@@ -94,7 +94,10 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
     ![image](./imgs/imgs_1/chat.png)
 22. From the dropdown menu, select your agent.
     ![image](./imgs/imgs_1/agent_selection.png)
-23. Now, you can use use your agent. Try to ask some queries. "Generate the information of all the accounts"  
+23. Now, you can use use your agent. Try to ask some queries. "Generate all accounts" 
+    ![image](./imgs/imgs_1/generate_outcome.png)
+24. Try with another prompt / query: "Generate information about all contacts"
+    ![image](./imgs/imgs_1/generate_outcome1.png)
 
 
 **Congratulations! You've built your first Procurement Agent using Pre-built agents and tools.**
