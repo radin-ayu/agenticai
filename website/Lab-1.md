@@ -94,7 +94,7 @@ The IBM watsonx Orchestrate Catalog is your gateway to a rich collection of preb
     ![image](./imgs/imgs_1/chat.png)
 22. From the dropdown menu, select your agent.
     ![image](./imgs/imgs_1/agent_selection.png)
-23. Now, you can use use your agent. Try to ask some queries. "Generate all accounts" 
+23. Now, you can use use your agent. Try to ask some queries. "Generate information about all accounts" 
     ![image](./imgs/imgs_1/generate_outcome.png)
 24. Try with another prompt / query: "Generate information about all contacts"
     ![image](./imgs/imgs_1/generate_outcome1.png)
