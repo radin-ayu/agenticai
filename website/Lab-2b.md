@@ -8,6 +8,8 @@ nav_order: 4
 
 In this lab, you will build a Calculate Reorder Agent using Watsonx Orchestrate. This agent will allow you to integrate external tools: txt2sql (for querying stock data) and autoai (for time series forecasting), to calculate an optimal reorder quantity.
 
+![image](./imgs/imgs_2b/lab-architecture2b.png)
+
 Files used in lab can be downloaded from the following links:
 -  [timeseries_openapi.json](/Lab_2b_Files/timeseries_openapi_new.json)
 
