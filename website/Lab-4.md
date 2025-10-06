@@ -51,7 +51,7 @@ Step-by-step Instructions
 
 1. Next let's refresh the page and then test our end-to-end AskProcurement demo.
 
-1. Your results should mostly match the results in the [**demo\_video.mov**](https://ibm.box.com/s/97ykz714zpfvdx14j0o1hvbs5a6hrhd9).
+1. Your results should mostly match the results in the [**demo\_video.mov**](https://ibm.box.com/s/dxe2k9254uqbf2dc5xx358dmu0sm9vpo).
     ```
     Research for Xtralife Suppliers
     ```
@@ -68,13 +68,13 @@ Step-by-step Instructions
     After you get the reorder quantity:
 
     ```
-    Can I check if this quantity fits our company policy?
+    I want to reorder for global office. Can you check if this reorder quantity needs approval?
     ```
 
 * Feature demonstrated: Call a flow tool
 
     If you get the following response:
-    
+
     **Your order is approved. You can proceed to place your order.**
 
     ```
