@@ -146,7 +146,7 @@ Step-by-step instructions
 
     <img src="./imgs/imgs_3/lab3_createflow14.png" alt="image" width="500" />
 
-    Select the **>** sign from the drop down and change the value to 150000.
+    Select the **>** sign from the drop down and change the value to 100000.
 
     <img src="./imgs/imgs_3/lab3_createflow15.png" alt="image" width="500" />
 
@@ -188,7 +188,7 @@ Step-by-step instructions
     User prompt:
 
     ```
-    Based on the reorder value {reorder_value}, you are to generate an email to your sales manager, Mr Wong, to seek approval this reorder value. This reorder value is over the approved budget of $150000. You can create a reason for this order such as nearing festivities and you foresee that there is a surge in sales for the product Xtralife. Be professional and avoid long-winded explanation.
+    Based on the reorder value {reorder_value}, you are to generate an email to your sales manager, Mr Wong, to seek approval this reorder value. This reorder value is over the approved budget of $100000. You can create a reason for this order such as nearing festivities and you foresee that there is a surge in sales for the product Xtralife. Be professional and avoid long-winded explanation.
     
     ```
 
