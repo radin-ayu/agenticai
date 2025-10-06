@@ -89,11 +89,11 @@ Files used in lab can be downloaded from the following links:
 
 1. Name, description fill in as you like. Select Connection, click **Workshop_tavily**, Install Command : ``` npx -y tavily-mcp@0.2.1 ```, and Click **Connect**
 
-     ![image](./imgs/imgs_2a/step_14.png)
+     ![image](./imgs/imgs_2a/step_18.png)
 
 1. Once connected turn **ON** the **tavily-search** tool.
 
-    ![image](./imgs/imgs_2a/step_15.png)
+    ![image](./imgs/imgs_2a/step_17.png)
     
 1. Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshot(s) below:
 
