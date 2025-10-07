@@ -265,11 +265,11 @@ Step-by-step Instructions
 1. Let's try a question to test our flow.
 
     ```
-    Check my order for 2000 units of Xtralife with $16 per unit. 
+    Check my order for 1000 units of Xtralife with $16 per unit. 
     ```
     <img src="./imgs/imgs_3/lab3_test.png" alt="image" width="500" />  
 
-    Since 2000 x $16 is less than $150000, the output should show us that the order is approved and we can proceed to place order. 
+    Since 1000 x $16 is less than $100000, the output should show us that the order is approved and we can proceed to place order. 
 
     <img src="./imgs/imgs_3/lab3_test1.png" alt="image" width="500" />  
 
