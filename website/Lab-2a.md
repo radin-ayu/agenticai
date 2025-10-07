@@ -4,7 +4,7 @@ title: Lab 2a
 # permalink: /lab1/
 nav_order: 3
 ---
-# 🏦 AskProcurement Lab 1: Building a Supplier Research RAG Agent
+# 🏦 AskProcurement Lab 2a: Building a Supplier Research RAG Agent
 
 Please refer to [Lab 2 Explanations](../pdfs/Lab%202a-explanation.pdf) for additional information.
     
