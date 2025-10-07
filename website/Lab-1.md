@@ -101,7 +101,7 @@ Prebuilt agents present an easy way to build an agent. However, we can also edit
 10. Now, you can use use your agent. Try to ask some queries. "Show information about all accounts" 
     ### Queries:
     ```
-    Generate all accounts
+    Show information about all accounts
     ```
     ![image](./imgs/imgs_1/generate_outcome.png)
 
