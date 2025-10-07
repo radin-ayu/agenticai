@@ -63,7 +63,7 @@ This lab introduces the Account Management Agent in Watsonx Orchestrate, which r
 
     ### Queries:
     ```
-    Generate the information of all the accounts
+    Show all the accounts
     ```
     ![image](./imgs/imgs_1/preview_outcome.png)
     
@@ -98,7 +98,7 @@ Prebuilt agents present an easy way to build an agent. However, we can also edit
 9. From the dropdown menu, select your agent.
     ![image](./imgs/imgs_1/agent_selection.png)
 
-10. Now, you can use use your agent. Try to ask some queries. "Generate information about all accounts" 
+10. Now, you can use use your agent. Try to ask some queries. "Show information about all accounts" 
     ### Queries:
     ```
     Generate all accounts
@@ -106,7 +106,7 @@ Prebuilt agents present an easy way to build an agent. However, we can also edit
     ![image](./imgs/imgs_1/generate_outcome.png)
 
     ```
-    Generate information about all contacts
+    Show information about all contacts
     ```
     ![image](./imgs/imgs_1/generate_outcome1.png)
 
