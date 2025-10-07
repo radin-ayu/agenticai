@@ -37,7 +37,7 @@ Files used in lab can be downloaded from the following links:
 
     Click on **Create**:
 
-    ![image](./imgs/imgs_2a/step_4.png)
+    ![image](./imgs/imgs_2a/step_19.png)
 
 1. We are going to build a knowledge base for the agent. Scroll down the screen to the **Knowledge** section and click on "Choose knowledge".
 
