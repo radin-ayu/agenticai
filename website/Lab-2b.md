@@ -11,7 +11,7 @@ In this lab, you will build a Calculate Reorder Agent using Watsonx Orchestrate.
 ![image](./imgs/imgs_2b/lab-architecture2b.png)
 
 Files used in lab can be downloaded from the following links:
--  [timeseries_openapi.json](/Lab_2b_Files/timeseries_openapi_new.json)
+-  [timeseries_openapi.json](./Lab_2b_Files/timeseries_openapi_new.json)
 
 ## Step by step instructions to build the Calculate Reorder Agent:
 
