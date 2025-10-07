@@ -96,7 +96,7 @@ Step-by-step Instructions
 
     Click **Add**
 
-    <img src="./imgs/imgs_3/lab3_createvar1.png" alt="image" width="500" />
+    <img src="./imgs/imgs_3/lab3_createvar2.png" alt="image" width="500" />
     
 1. We will start creating the flow by inserting a branch to check the total reorder value. We will need to multiply both the inputs.<br>From the tools menu, drag out a **Code Block**. Ensure that the tool snaps on the flow.
 
