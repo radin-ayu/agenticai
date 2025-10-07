@@ -13,8 +13,8 @@ In this lab, you will build a Supplier Researcher Agent using Watsonx.ai Agent L
 ![image](./imgs/imgs_2a/lab-architecture2a.png)
 
 Files used in lab can be downloaded from the following links:
--  [Procurement Requisition Rules_update.pdf](/Lab_2a_Files/Procurement%20Requisition%20Rules_update.pdf)
-- [Supplier Sales Report for Procurement_update.pdf](/Lab_2a_Files/Supplier%20Sales%20Report%20for%20Procurement_update.pdf)
+-  [Procurement Requisition Rules_update.pdf](./Lab_2a_Files/Procurement%20Requisition%20Rules_update.pdf)
+- [Supplier Sales Report for Procurement_update.pdf](./Lab_2a_Files/Supplier%20Sales%20Report%20for%20Procurement_update.pdf)
 ## Step by step instructions to build the Supplier Researcher Agent:
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
